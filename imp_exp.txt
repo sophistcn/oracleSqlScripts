@@ -1,3 +1,4 @@
 imp wzp2/wzp2@xe fromuser=wzp touser=wzp2 file=G:\g9_bak.tmp log=b.log;
 
 exp wzp/wzp@xe file=G:\dbBackUp\g9.bak.20160110.dmp full=y;
+
