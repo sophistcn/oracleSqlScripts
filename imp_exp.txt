@@ -2,3 +2,12 @@ imp wzp2/wzp2@xe fromuser=wzp touser=wzp2 file=G:\g9_bak.tmp log=b.log;
 
 exp wzp/wzp@xe file=G:\dbBackUp\g9.bak.20160110.dmp full=y;
 
+exp wzp/wzp@xe file=G:\dbBackUp\g9.bak.20160114_1.dmp
+
+imp tby/tby@xe file=G:\dbBackUp\g9.bak.20160114_1.dmp full=y;
+
+exp wzp/wzp@xe fromuser=wzp touser=tby file=G:\dbBackUp\g9.bak.20160114_1.dmp full=y;
+
+
+
+imp tby/tby@xe fromuser=user touser=tby file=G:\dbBackUp\g9.bak.20160114_1.dmp full=y;
