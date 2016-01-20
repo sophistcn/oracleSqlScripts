@@ -2,7 +2,7 @@
 create user wzp identified by wzp;
 grant dba to wzp;
 grant connect, resource to wzp;
-r
+
 
 
 create user wzp1 identified by wzp1;
