@@ -1,0 +1,7 @@
+select * from vw_gtsa_account_balance ;
+
+select * from vw_gtsk_bank_account;
+
+
+
+
