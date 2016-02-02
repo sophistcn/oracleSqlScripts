@@ -273,3 +273,13 @@ select * from gtsa_account;
        and acc.cur_code = 'USD'
        and acc.account_type_id in (4)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+select * from gtsa_account t where t.account_no = '501510980556';
+update gtsa_account t set t.gather_account = '924000000001' where t.account_no = '501510980556';
+
+--924000000001
+
+select t2.*
+  from (select t1.*,
+               ROW_NUMBER() over(partition by t1.account_number order by t1.savedate desc) balance_row_number
+          from gtsa_account_balanace t1) t2
+ where t2.balance_row_number = 1 ;
