@@ -287,5 +287,87 @@ select bk.country       as "country",
   from gtsa_account_apply t
  inner join gtsa_bank_info bk
     on t.bank_id = bk.bank_id
-   and apy.account_apply_id = #AccountApplyId#
-   ;
+   and apy.account_apply_id = #AccountApplyId#;
+--------------------------------------------------------------------------------------------------
+select * from gtsa_account_apply apy where apy.account_apply_id = 2301
+
+select bk.*
+  from gtsa_account_apply apy
+ inner join gtsa_bank_info bk
+    on apy.bank_id = bk.bank_id
+ where apy.account_apply_id = 2301;
+
+------------------------------------------------------------------------------------
+
+select decode(apy.account_type_id, acc.account_type_id, apy.account_type_id),
+       apy.account_type_id,
+       acc.account_type_id
+  from gtsa_account_apply apy
+  left join gtsa_account acc
+    on apy.account_id = acc.account_id
+ where apy.account_apply_id = 2301;
+
+select * from gtsa_acc_tx_map g where  account_id  = 34 order by tx_code
+---------------------------------------------------------------------------------------
+select cltno as "value", ns.address as "name" from ;
+select * from gtsa_account where ACCOUNT_ID = 484 for update;
+---------------------------------------------------------------
+select * from gtsa_account_apply t order by t.account_apply_id desc;
+
+select ns.cltname            as "custNo",
+       t.connect_way         as "connectWay",
+       t.inner_account_no    as "innerAccountNo",
+       um.codename           as "curCode",
+       t.account_no          as "accountNo",
+       t.exp_abnormal_ratio  as "expAbnormalRatio",
+       bk.bank_name          as "bankName",
+       ar.area_name          as "accountLocation",
+       t.account_state       as "accountState",
+       t.account_name        as "accountName",
+       t.clt_address         as "cltAddress",
+       t.account_source_from as "accountSourceFrom",
+       t.account_type_id     as "accountTypeId",
+       t.large_alert_amount  as "largeAlertAmount"
+  from gtsa_account_apply t
+  left join nsclient ns
+    on t.cust_no = ns.cltno
+  left join um_currency um
+    on t.cur_code = um.codeno
+  left join gtsa_bank_info bk
+    on t.bank_id = bk.bank_id
+  left join gtsa_area ar
+    on t.account_location = ar.area_code
+ where t.account_apply_id = 4515;
+ 
+ 
+ 
+ select ns.cltname            as "custNo",
+           t.connect_way         as "connectWay",
+           t.inner_account_no    as "innerAccountNo",
+           um.codename           as "curCode",
+           t.account_no          as "accountNo",
+           t.exp_abnormal_ratio  as "expAbnormalRatio",
+           bk.bank_name          as "bankName",
+           ar.area_name          as "accountLocation",
+           t.account_state       as "accountState",
+           t.account_name        as "accountName",
+           t.clt_address         as "cltAddress",
+           t.account_source_from as "accountSourceFrom",
+           t.account_type_id     as "accountTypeId",
+           t.large_alert_amount  as "largeAlertAmount"
+      from gtsa_account t
+      left join nsclient ns
+        on t.cust_no = ns.cltno
+      left join um_currency um
+        on t.cur_code = um.codeno
+      left join gtsa_bank_info bk
+        on t.bank_id = bk.bank_id
+      left join gtsa_area ar
+        on t.account_location = ar.area_code
+     where t.account_apply_id = #accountApplyId# 
+ 
+
+select * from gtsa_account_type ;
+select * from gtsa_acc_biz_type;
+
+
