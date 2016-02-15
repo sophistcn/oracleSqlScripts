@@ -442,3 +442,7 @@ select * from gtsa_acc_biz_type;
 ----------------------------
 
 select * from gtsa_bank_info bk order by bk.bank_id desc ; 
+
+
+
+select * from ns_gs_settings t where t.param_name like '%ebd%';
