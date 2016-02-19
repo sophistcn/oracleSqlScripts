@@ -446,3 +446,271 @@ select * from gtsa_bank_info bk order by bk.bank_id desc ;
 
 
 select * from ns_gs_settings t where t.param_name like '%ebd%';
+
+select * from gtsa_account;
+update gtsa_account t set t.inner_account_no = '101102-01001' where t.account_no = '10002';
+update gtsa_account t set t.account_no = '10002' where t.account_no = '10002nb';
+
+select * from student for update;
+insert into student ( id,addr,age,birthdate,grade,name) values ( 2,'addr2',1,'',2,'');
+
+insert into student ( id,addr,age,birthdate,grade,name) values (#id#,#addr#,#age#,#birthdate#,#grade#,#name#);
+
+select hibernate_sequence.nextval from dual;
+------------------------------------------------------------------------------------------------------------------------
+  ---N6 balance
+   select b.account_id as "accountId",
+         acc.cust_no as "custNo",
+         bk.bank_no as "bankNo",
+         bk.bank_name as "openBankName",
+         acc.account_no as "accountNumber",
+         acc.account_type_id as "accountTypeId",
+         b.balance as "accountBalance",
+         b.book_date as "bookDate",
+         bk.country as "country",
+         acc.account_location as "accountLocation",
+         acc.account_area as "accountArea",
+         acc.cur_code as "curCode",
+         b.savedate as "saveDate",
+         nvl(t1.median_price, 0) * b.available_balance * 0.01 as "balanceRMB"
+    from gtsa_account_balanace b
+   inner join gtsa_account acc
+      on b.account_id = acc.account_id
+    left join gtsa_bank_info bk
+      on acc.bank_id = bk.bank_id
+    left join vm_rms_exc_rate t1
+      on acc.cur_code = t1.no
+    where acc.connect_way = 3
+     
+    ---G6 balance
+    select b.account_id as "accountId",
+           acc.cust_no as "custNo",
+           bk.bank_no as "bankNo",
+           bk.bank_name as "openBankName",
+           acc.account_no as "accountNumber",
+           acc.account_type_id as "accountTypeId",
+           b.balance as "accountBalance",
+           b.book_date as "bookDate",
+           bk.country as "country",
+           acc.account_location as "accountLocation",
+           acc.account_area as "accountArea",
+           acc.cur_code as "curCode",
+           b.savedate as "saveDate",
+           nvl(t1.rate, 0) * b.available_balance * 0.01 as "balanceRMB"
+      from gtsa_account_balanace b
+     inner join gtsa_account acc
+        on b.account_id = acc.account_id
+      left join gtsa_bank_info bk
+        on acc.bank_id = bk.bank_id
+      left join (select *
+                   from g_exchange_rate t4
+                  where t4.actdate =
+                        (select max(actdate)
+                           from g_exchange_rate t5
+                          where t4.standardno = t5.standardno)) t1
+        on t1.standardno = acc.cur_code
+    where acc.connect_way = 3;
+    
+    select * from g_exchange_rate;
+----------------------------------------------------------
+select * from vm_rms_exc_rate ;
+
+-------------------------------------------------------------------------------------------
+    
+    select b.account_id as "accountId",
+           acc.cust_no as "custNo",
+           bk.bank_no as "bankNo",
+           bk.bank_name as "openBankName",
+           acc.account_no as "accountNumber",
+           acc.account_type_id as "accountTypeId",
+           b.balance as "accountBalance",
+           b.book_date as "bookDate",
+           bk.country as "country",
+           acc.account_location as "accountLocation",
+           acc.account_area as "accountArea",
+           acc.cur_code as "curCode",
+           b.savedate as "saveDate",
+           nvl(t1.median_price, 0) * b.available_balance * 0.01 as "balanceRMB"
+      from gtsa_account_balanace b
+     inner join gtsa_account acc
+        on b.account_id = acc.account_id
+      left join gtsa_bank_info bk
+        on acc.bank_id = bk.bank_id
+      left join vm_rms_exc_rate t1
+        on acc.cur_code = t1.no
+     where 1 = 1
+       and bk.is_domestic = 1
+       and acc.connect_way = 3
+     
+     
+select cltno as "value", cltname as "name" from nsclient;
+
+select *
+  from (select t.*, rownum r
+          from gtsa_account_apply t
+         where t.account_id = 464
+         order by t.account_apply_id desc) c
+
+select * from gtsa_account_apply;
+select * from gtsa_account;
+
+-------------------------------------------------------------
+
+
+   
+   select G.ACCOUNT_ID           AS "accountId",
+          g.account_apply_id     as "accountApplyId",
+          sb.bank_name           as "bankNoName",
+          g.account_no           as "accountNo",
+          umcur.codename         as "curCodeName",
+          bt.biz_type_name       as "bizTypeName",
+          c.opbankname           as "openBankName",
+          g.inner_account_no     as "innerAccountNo",
+          ns.cltname             as "custNoName",
+          g.account_state        as "accountState",
+          acct.account_type_name as "accountTypeName",
+          g.flow_state           as "accountStateName",
+          g.account_location     as "accountLocation",
+          g.operate_type         as "operateType",
+          g.remarks              as "remarks"
+     from gtsa_account_apply g,
+          gtsa_bank_info     b,
+          admp_standard_bank sb,
+          um_currency        umcur,
+          gtsa_acc_biz_type  bt,
+          cnaps              c,
+          nsclient           ns,
+          /* um_form            um       ,*/
+          gtsa_account_type acct
+    where g.bank_id = b.bank_id
+      and b.bank_no = sb.bank_code
+      and g.account_type_id = acct.account_type_id
+      and g.cur_code = umcur.codeno
+      and g.biz_type_id = bt.biz_type_id
+      and b.bank_name = c.cnapsno
+      and g.cust_no = ns.cltno
+         /* and g.account_apply_id = um.fmid*/
+      and g.flow_state in (2, 11, 99)
+   
+   union all
+   /*æ≥Õ‚*/
+   
+   select G.ACCOUNT_ID           AS "accountId",
+          g.account_apply_id     as "accountApplyId",
+          b.bank_name            as "bankNoName",
+          g.account_no           as "accountNo",
+          umcur.codename         as "curCodeName",
+          bt.biz_type_name       as "bizTypeName",
+          b.bank_name            as "openBankName",
+          g.inner_account_no     as "innerAccountNo",
+          ns.cltname             as "custNoName",
+          g.account_state        as "accountState",
+          acct.account_type_name as "accountTypeName",
+          g.flow_state           as "accountStateName",
+          g.account_location     as "accountLocation",
+          g.operate_type         as "operateType",
+          g.remarks              as "remarks"
+     from gtsa_account_apply g,
+          gtsa_bank_info     b,
+          um_currency        umcur,
+          gtsa_acc_biz_type  bt,
+          nsclient           ns,
+          /*   um_form            um       ,*/
+          gtsa_account_type acct
+    where g.bank_id = b.bank_id
+      and g.account_type_id = acct.account_type_id
+      and g.cur_code = umcur.codeno
+      and g.biz_type_id = bt.biz_type_id
+      and g.cust_no = ns.cltno
+         /* and g.account_apply_id = um.fmid*/
+      and g.bank_id = b.bank_id
+      and g.flow_state in (2, 11, 99)
+      and b.is_domestic = 2
+   
+    order by "accountApplyId" desc
+----------------------------------------------------------------------------------------------------------------
+
+   select G.ACCOUNT_ID           AS "accountId",
+          g.account_apply_id     as "accountApplyId",
+          sb.bank_name           as "bankNoName",
+          g.account_no           as "accountNo",
+          umcur.codename         as "curCodeName",
+          bt.biz_type_name       as "bizTypeName",
+          b.bank_name           as "openBankName",
+          g.inner_account_no     as "innerAccountNo",
+          ns.cltname             as "custNoName",
+          g.account_state        as "accountState",
+          acct.account_type_name as "accountTypeName",
+          g.flow_state           as "accountStateName",
+          g.account_location     as "accountLocation",
+          g.operate_type         as "operateType",
+          g.remarks              as "remarks"
+     from gtsa_account_apply g inner join 
+          gtsa_bank_info     b on g.bank_id = b.bank_id  inner join 
+          admp_standard_bank sb on b.bank_no = sb.bank_code inner join 
+          um_currency        umcur on g.cur_code = umcur.codeno inner join 
+          gtsa_acc_biz_type  bt on g.biz_type_id = bt.biz_type_id inner join 
+          nsclient           ns on g.cust_no = ns.cltno inner join 
+          /* um_form            um       ,*/ 
+          gtsa_account_type acct on g.account_type_id = acct.account_type_id 
+    where g.flow_state in (2, 11, 99)
+    order by "accountApplyId" desc ;
+------------------------------------
+select bk.bank_id as "value", bk.bank_name as "name" from gtsa_bank_info bk
+
+
+SELECT g.bank_id AS "value", C.opbankname AS "name"
+  FROM gtsa_bank_info g, cnaps c
+ where g.open_bank_no = c.cnapsno
+union all
+select t.bank_id as "value", t.bank_name as "name"
+  from gtsa_bank_info t
+ where t.is_domestic = 2
+ order by "value" desc;
+ 
+ 
+ SELECT g.bank_id AS "value", C.opbankname AS "name"
+   FROM gtsa_bank_info g, cnaps c
+  where g.open_bank_no = c.cnapsno
+ 
+ union all
+ 
+ select t.bank_id as "value", t.bank_name as "name"
+   from gtsa_bank_info t
+  where t.is_domestic = 2
+ 
+  order by "value" desc
+;
+
+
+------------------------------
+
+
+select t.BANK_ACCOUNT_ID  as "bankAccountId",
+           t.BRANCH_BANK_CODE as "bankBranchCode",
+           t.BANK_BRANCH_NAME as "bankBranchName",
+           t.bank_address     as "bankAddress",
+           t.bank_english_address as "bankEnglishAddress",
+           t.bank_swift_no    as "bankSwiftNo",
+           t.account_no       as "accountNo",
+           t.account_name     as "accountName",
+           t.REGION_CODE      as "regionCode",
+           t.region_name      as "regionName",
+           t.cust_no          as "custNo",
+           t.CUST_NAME        as "custName",
+           t.CURRENCY_NO      as "currencyNo",
+           t.CURRENCY_NAME    as "currencyName",
+           t.connect_flag     as "connectFlag",
+           t.account_state    as "accountState",
+           t.BELONGTO_FLAG    as "belongtoFlag",
+           t.DOMESTIC         as "domestic",
+           t.ACCOUNT_TYPE     as "accountType",
+           t.NATURECODE       as "natureCode",
+           t.NATURE           as "natureName",
+           t.CONNECT_WAY    as "connectWay"
+      from vw_gtsk_bank_account t
+      
+----------------------
+      select * from vw_gtsk_bank_account;
+-----------
+select * from gtsa_account_detail d  where d.account_number = '0000000000000002';
