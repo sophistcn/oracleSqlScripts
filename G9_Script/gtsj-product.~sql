@@ -1,0 +1,260 @@
+select distinct (b.bank_code) as bankCode, b.bank_name as bankName
+  from admp_standard_bank b
+ where 1 = 1
+
+ order by b.bank_code
+------------------------------------------------
+    
+    select count(n.account_no) as accountTotal
+      from admp_standard_bank s
+      left join gtsa_bank_info t
+        on s.bank_code = t.bank_no
+      left join (select * from gtsa_account ga where 1 = 1) n
+        on t.bank_id = n.bank_id
+      left join gtsa_area a
+        on n.account_location = a.area_code
+     where 1 = 1
+     group by s.bank_code
+     order by s.bank_code
+-----------------------------------
+   
+    select count(n.account_no) as accountTotal
+      from admp_standard_bank s
+      left join gtsa_bank_info t
+        on s.bank_code = t.bank_no
+      left join (select * from gtsa_account ga where 1 = 1) n
+        on t.bank_id = n.bank_id
+        and n.connect_way in (1, 2)
+      left join gtsa_area a
+        on n.account_location = a.area_code
+     where 1 = 1
+     group by s.bank_code
+     order by s.bank_code
+     
+------------
+select * from admp_standard_bank;
+
+----------------------------
+
+    
+    select t.account_id as accountId,
+           t.account_location as accountLocation,
+           ar.area_name as areaName,
+           um.name as countryName,
+           c.chinesename as cltName,
+           a.bank_name as bankName,
+           t.account_no as accountNo,
+           t.account_name as accountName,
+           u.codename as codeName,
+           decode(t.connect_way, 1, '選利', 2, '選利', 3, '掲選利') as connectWay
+      from Gtsa_Account t
+      left join clt_clt_info c
+        on t.cust_no = c.cltno
+      left join GTSA_BANK_INFO g
+        on t.bank_id = g.bank_id
+      left join admp_standard_bank a
+        on a.bank_code = g.bank_no
+      left join um_currency u
+        on u.codeno = t.cur_code
+      left join um_country um
+        on um.code = g.country
+      left join gtsa_area ar
+        on ar.area_code = t.account_location
+     where 1 = 1
+       and c.cltno = '001'
+       and t.cur_code = 'USD'
+     order by c.treeno
+--------------------------------------------
+  select count(n.account_no) as accountTotal
+    from admp_standard_bank s
+    left join gtsa_bank_info t
+      on s.bank_code = t.bank_no
+    left join (select * from gtsa_account ga where 1 = 1 and ga.connect_way in (1,2)) n
+      on t.bank_id = n.bank_id
+     
+    left join gtsa_area a
+      on n.account_location = a.area_code
+   where 1 = 1
+   group by s.bank_code
+   order by s.bank_code
+--------------------
+
+
+ select n.*
+    from admp_standard_bank s
+    left join gtsa_bank_info t
+      on s.bank_code = t.bank_no
+    left join (select * from gtsa_account ga where 1 = 1 and ga.connect_way in (1,2)) n
+      on t.bank_id = n.bank_id
+    left join gtsa_area a
+      on n.account_location = a.area_code
+   where 1 = 1 and s.bank_code = '01'
+
+
+--------------------------------------
+ select s.*
+    from admp_standard_bank s
+    left join gtsa_bank_info t
+      on s.bank_code = t.bank_no
+    left join (select * from gtsa_account ga where 1 = 1) n
+      on t.bank_id = n.bank_id
+     and n.connect_way in (1, 2)
+    left join gtsa_area a
+      on n.account_location = a.area_code
+   where 1 = 1 
+   
+   ---------------------------------------------
+   
+   
+   
+    
+    select count(CASE
+                   WHEN s.bank_code = 01 THEN
+                    g.account_no
+                 END) bank1,
+           count(CASE
+                   WHEN s.bank_code = 02 THEN
+                    g.account_no
+                 END) bank2,
+           count(CASE
+                   WHEN s.bank_code = 03 THEN
+                    g.account_no
+                 END) bank3,
+           count(CASE
+                   WHEN s.bank_code = 04 THEN
+                    g.account_no
+                 END) bank4,
+           count(CASE
+                   WHEN s.bank_code = 05 THEN
+                    g.account_no
+                 END) bank5,
+           count(CASE
+                   WHEN s.bank_code = 06 THEN
+                    g.account_no
+                 END) bank6,
+           count(CASE
+                   WHEN s.bank_code = 07 THEN
+                    g.account_no
+                 END) bank7,
+           count(CASE
+                   WHEN s.bank_code = 08 THEN
+                    g.account_no
+                 END) bank8,
+           count(CASE
+                   WHEN s.bank_code = 09 THEN
+                    g.account_no
+                 END) bank9,
+           count(CASE
+                   WHEN s.bank_code = 10 THEN
+                    g.account_no
+                 END) bank10,
+           count(CASE
+                   WHEN s.bank_code = 11 THEN
+                    g.account_no
+                 END) bank11,
+           count(CASE
+                   WHEN s.bank_code = 12 THEN
+                    g.account_no
+                 END) bank12,
+           count(CASE
+                   WHEN s.bank_code = 13 THEN
+                    g.account_no
+                 END) bank13,
+           count(CASE
+                   WHEN s.bank_code = 14 THEN
+                    g.account_no
+                 END) bank14,
+           count(CASE
+                   WHEN s.bank_code = 15 THEN
+                    g.account_no
+                 END) bank15,
+           a.area_name as areaName,
+           a.area_code as areaCode,
+           count(g.account_no) as totalCount
+      from gtsa_area a
+      left join (select * from gtsa_account ga where 1 = 1) g
+        on g.account_location = a.area_code
+      left join gtsa_bank_info bk
+        on g.bank_id = bk.bank_id
+      left join admp_standard_bank s
+        on s.bank_code = bk.bank_no
+     where 1 = 1
+       and g.connect_way in (1, 2)
+     group by a.area_code, a.area_name
+---------------------------------------------------------------------------------------------
+
+
+
+select t.account_id as accountId,
+       t.account_location as accountLocation,
+       ar.area_name as areaName,
+       um.name as countryName,
+       c.chinesename as cltName,
+       a.bank_name as bankName,
+       t.account_no as accountNo,
+       t.account_name as accountName,
+       u.codename as codeName,
+       decode(t.connect_way, 1, '選利', 2, '選利', 3, '掲選利') as connectWay
+  from Gtsa_Account t
+  left join clt_clt_info c
+    on t.cust_no = c.cltno
+  left join GTSA_BANK_INFO g
+    on t.bank_id = g.bank_id
+  left join admp_standard_bank a
+    on a.bank_code = g.bank_no
+  left join um_currency u
+    on u.codeno = t.cur_code
+  left join um_country um
+    on um.code = g.country
+  left join gtsa_area ar
+    on ar.area_code = t.account_location
+ where 1 = 1
+   and t.connect_way in (1, 2)
+   and g.bank_no = '01'
+   and t.account_location = '1'
+ order by c.treeno;
+-----------------------------------
+
+
+ 
+ select c.cltno as cltno,
+        c.chinesename as cltName,
+        count(decode(g.connect_way, 1, 1, 2, 1, null)) as connectCount,
+        count(decode(g.connect_way, 3, 1, null)) as notConnectCount,
+        count(g.account_no) as totalConnectCount
+   from clt_clt_info c
+   left join gtsa_account g
+     on g.cust_no = c.cltno
+  where 1 = 1
+  group by c.cltno, c.chinesename, c.treeno
+  order by c.treeno
+
+------------------------------------------------------------------
+    
+    select t.account_id as accountId,
+           t.account_location as accountLocation,
+           ar.area_name as areaName,
+           um.name as countryName,
+           c.chinesename as cltName,
+           a.bank_name as bankName,
+           t.account_no as accountNo,
+           t.account_name as accountName,
+           u.codename as codeName,
+           decode(t.connect_way, 1, '選利', 2, '選利', 3, '掲選利') as connectWay
+      from Gtsa_Account t
+      left join clt_clt_info c
+        on t.cust_no = c.cltno
+      left join GTSA_BANK_INFO g
+        on t.bank_id = g.bank_id
+      left join admp_standard_bank a
+        on a.bank_code = g.bank_no
+      left join um_currency u
+        on u.codeno = t.cur_code
+      left join um_country um
+        on um.code = g.country
+      left join gtsa_area ar
+        on ar.area_code = t.account_location
+     where 1 = 1
+       and c.cltno = '2014102701'
+     order by c.treeno
+;

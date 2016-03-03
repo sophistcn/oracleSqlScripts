@@ -9,6 +9,10 @@ create user wzp1 identified by wzp1;
 grant dba to wzp1;
 grant connect, resource to wzp1;
 
+create user zx identified by zx;
+grant dba to zx;
+grant connect, resource to zx;
+
 select tablespace_name, table_name from user_tables;
 alter tablespace SYSTEM
     add datafile 'D:\oraclexe\app\oracle\oradata\XE\SYSTEM_EXT.DBF'

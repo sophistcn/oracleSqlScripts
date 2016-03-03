@@ -86,6 +86,51 @@ select * from gtsa_bank_info;
                 on t.account_no = bl.account_number
              where t.account_no = 'w103'
              order by bl.savedate desc) c
-     where c.r = 1
+     where c.r = 1;
 -------------
-select * from gtse_tx ;
+select t.bank_account_no, t.* from gtse_tx t;
+select * from gtsa_account t where t.account_no = 'nstc2015070700001';
+update gtsa_account t set t.inner_account_no = '00101' where t.account_no = 'nstc2015070700001';
+update gtsa_account t set t.inner_account_no = '2011010192700000000' where t.account_no = '1002';
+
+select * from gtsa_account t where t.account_no = '1002';
+
+update gtse_tx t set t.ebd_error_msg = '' where t.tx_id = 642;
+--------------------------------------------------------------
+select * from gtsa_bank_info ;
+
+select *
+  from admp_standard_bank sbk
+ order by F_TRANS_PINYIN_CAPITAL_H(sbk.bank_name) asc
+select * from admp_standard_bank sbk order by sbk.bank_name asc;
+-----------------------------------------------
+
+select SEQ_GTSE_PACKET_ID.nextval from dual;
+select SEQ_GTSE_PACKET_ID.nextval from dual;
+
+select  a.bank_code as "value", a.bank_name as "name" from admp_standard_bank a order by F_TRANS_PINYIN_CAPITAL_H(a.bank_name) asc;
+
+
+select * from fer_tx t where t.txid = 181;
+
+
+    
+    select t.*
+      from vw_fer_query_tx t
+     where 1 = 1
+       and state <> -6
+       and t.state = 11
+     order by t.CREATETIME DESC;
+     
+     select * from fer_tx_log l where l.txid = 181;
+--------------------
+    
+    select c.*
+      from (select t.bank_account_no, rownum r
+              from gtse_tx t, gtse_tx_register r
+             where t.tx_id = r.tx_id
+               and r.register_state = 1) c
+     where c.r > 0
+       and c.r <= 10
+---------------------------------
+

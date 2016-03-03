@@ -716,3 +716,6 @@ select t.BANK_ACCOUNT_ID  as "bankAccountId",
 select * from gtsa_account_detail d  where d.account_number = '0000000000000002';
 -------------------------------------------------
 select * from ns_gs_settings;
+---------------------------------------------------------
+select * from gtsa_account;
+select * from clt_clt_info;
