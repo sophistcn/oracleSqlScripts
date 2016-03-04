@@ -102,3 +102,106 @@ select * from vw_fer_account;
 select * from fcm_currency_convert_info ;
 
 select * from biz_flow b where b.
+-------------------------------------------------
+
+    
+    select f.id tradeId,
+           f.trade_source,
+           f.sheet_account,
+           f.rec_date actDate,
+           f.amount aMount,
+           f.rec_bank bankNo,
+           b.bank_name bankName,
+           f.currency_No currencyNo,
+           f.corp_no cltno,
+           f.rec_account acntNo,
+           f.rec_name acntName,
+           f.con_account fcNo,
+           f.pay_account opAcntNo,
+           f.pay_name opAcntName,
+           f.pay_bank opbankname,
+           f.memberno memberNo,
+           n.cltname as memberName,
+           f.remark explain,
+           f.status receiptState,
+           f.bank_rec_id rId,
+           f.buss_no bussNo,
+           '' memAcntno,
+           '' memInnerAcntno,
+           '' memInnerkmh,
+           t.tname,
+           f.pay_bank
+      from fer_receipt f
+      JOIN admp_standard_bank b
+        ON f.rec_bank = b.bank_code
+      left join NSCLIENT N
+        on N.cltno = f.memberNo
+      left join fer_trademode t
+        on f.trademodeid = t.trademodeid
+     where 1 = 1
+----------------------------------------------------------
+
+select * from fer_tx t ;
+
+select * from gtsa_account t where t.account_no = '15822690644';
+
+------------
+
+ 
+ select t.*
+   from vw_fer_query_tx t
+  where 1 = 1
+    and state <> -6
+    and t.cltNo = '001'
+    and t.state in (0, -2, -4, -5, -3)
+    and t.state <> -9
+    and t.bussType like '%financeSelf'
+    and t.swiftFlag = '0'
+  order by t.CREATETIME DESC ;
+  
+----------------------
+
+select * from vw_fer_query_tx;
+
+select * from fer_tx_log t where t.logid =  666; 
+
+------------------
+    
+    select t.codename as joinCurrencyName, t.*
+      from vw_fer_account t
+     where 1 = 1
+       and t.cur_code = 'EUR'
+       and t.account_type_id = '5'
+       and t.CUST_NO = '001'
+       and t.bank_no = '04'
+
+--------------
+ 
+ select t.codename as joinCurrencyName, t.*
+   from vw_fer_account t
+  where 1 = 1
+    and t.cur_code = 'CNY'
+    and t.account_type_id = '2'
+    and t.CUST_NO = '0010101'
+    and t.bank_no = '04'
+-----------------
+
+select * from vw_fer_query_tx where txid = 285;
+---
+  select
+        t.codename as joinCurrencyName,
+        t.* 
+    from
+        vw_fer_account t 
+    where
+        1=1         
+        and             t.cur_code = 'EUR'                  
+        and             t.account_type_id = '5'                           
+        and             t.CUST_NO = '001'                  
+        and             t.bank_no = '01'   
+----
+
+
+select * from vw_fer_query_tx;
+select * from vw_fer_account;
+

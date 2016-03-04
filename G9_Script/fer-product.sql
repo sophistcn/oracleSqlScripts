@@ -139,4 +139,81 @@ select * from biz_flow b where b.
       left join fer_trademode t
         on f.trademodeid = t.trademodeid
      where 1 = 1
+----------------------------------------------------------
+
+select * from fer_tx t ;
+
+select * from gtsa_account t where t.account_no = '15822690644';
+
+------------
+
+ 
+ select t.*
+   from vw_fer_query_tx t
+  where 1 = 1
+    and state <> -6
+    and t.cltNo = '001'
+    and t.state in (0, -2, -4, -5, -3)
+    and t.state <> -9
+    and t.bussType like '%financeSelf'
+    and t.swiftFlag = '0'
+  order by t.CREATETIME DESC ;
+  
+----------------------
+
+select * from vw_fer_query_tx;
+
+select * from fer_tx_log t where t.logid =  666; 
+
+------------------
     
+    select t.codename as joinCurrencyName, t.*
+      from vw_fer_account t
+     where 1 = 1
+       and t.cur_code = 'EUR'
+       and t.account_type_id = '5'
+       and t.CUST_NO = '001'
+       and t.bank_no = '04'
+
+--------------
+ 
+ select t.codename as joinCurrencyName, t.*
+   from vw_fer_account t
+  where 1 = 1
+    and t.cur_code = 'CNY'
+    and t.account_type_id = '2'
+    and t.CUST_NO = '0010101'
+    and t.bank_no = '04'
+-----------------
+
+select * from vw_fer_query_tx where txid = 285;
+---
+  select
+        t.codename as joinCurrencyName,
+        t.* 
+    from
+        vw_fer_account t 
+    where
+        1=1         
+        and             t.cur_code = 'EUR'                  
+        and             t.account_type_id = '5'                           
+        and             t.CUST_NO = '001'                  
+        and             t.bank_no = '01'   
+----
+
+
+select * from vw_fer_query_tx;
+select * from vw_fer_account;
+
+------------------------------------------
+ 
+ select t.*
+   from vw_fer_query_tx t
+  where 1 = 1
+    and state <> -6
+    and t.cltNo = '001'
+    and t.state in (0, -2, -4, -5, -3)
+    and t.state <> -9
+    and t.bussType like '%financeSelf'
+    and t.swiftFlag = '0'
+  order by t.CREATETIME DESC ;
