@@ -212,8 +212,16 @@ select * from vw_fer_account;
   where 1 = 1
     and state <> -6
     and t.cltNo = '001'
-    and t.state in (0, -2, -4, -5, -3)
+    and t.state in (0, -2, -4, -5, -3,21)
     and t.state <> -9
     and t.bussType like '%financeSelf'
     and t.swiftFlag = '0'
   order by t.CREATETIME DESC ;
+  
+---
+  select * from fer_tx_log ;
+  select * from ns_gs_settings for update;
+  update ns_gs_settings g set ;
+  
+  select * from fer_tx_log where 1=1  and  	txId = 208      order by createTime;
+
