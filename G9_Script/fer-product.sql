@@ -219,9 +219,48 @@ select * from vw_fer_account;
   order by t.CREATETIME DESC ;
   
 ---
-  select * from fer_tx_log ;
+  select * from fer_tx --_log ;
   select * from ns_gs_settings for update;
   update ns_gs_settings g set ;
   
   select * from fer_tx_log where 1=1  and  	txId = 208      order by createTime;
+  
+  select * from fer_tx_log where 1=1  and  	txId = 208      order by createTime;
+  
+    select t.cashamount, t.amount,t.busstype from fer_tx t;
+--------------------------
+
+
+select * from  vw_fer_account;
+
+select t1.account_id,
+       t1.bank_id,
+       t1.account_type_id,
+       t1.account_no,
+       t1.cust_no,
+       t1.cur_code,
+       t1.account_name,
+       t1.inner_account_no,
+       t1.account_state,
+       t1.quota,
+       t2.is_domestic,
+       t2.bank_no,
+       t2.bank_swift_no,
+       t2.bank_region,
+       t2.bank_address,
+       s.bank_name,
+       case when t2.is_domestic = 1 then (select t3.opbankname from cnaps t3 where t3.cnapsno = t2.bank_name)
+            when t2.is_domestic = 2 then t2.bank_name
+        end as openBankName,
+       t2.remarks
+  from (select a.*,b.balance,b.available_balance quota from gtsa_account a left join (SELECT * from gtsa_account_balanace where savedate in (select MAX(savedate) id from gtsa_account_balanace b1 GROUP BY B1.ACCOUNT_ID)) b on a.account_id = b.account_id) t1
+  join gtsa_bank_info t2 on t1.bank_id = t2.bank_id
+  join admp_standard_bank s on t2.bank_no = s.bank_code
+  where t1.account_state = 1
+  ;
+  
+  
+--------------------------
+
+select * from fcm_synthetical_cashset_log t where trunc(t.create_date ,'dd') = trunc(sysdate -1 , 'dd') 
 

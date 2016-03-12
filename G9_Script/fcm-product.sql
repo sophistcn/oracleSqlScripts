@@ -16,8 +16,6 @@ INSERT INTO WF_MENU_TREE (MENUID, CAPTION, PMID, ISLEAF, IN_NEW_WINDOW, PAGENO, 
 
 select * from WF_MENU_TREE t where t.menuid like 'FCM%';
 select * from WF_MENU_TREE t where t.caption like '%牌价%';
-
---------
 select * from gtsa_account_detail ;
 
 ---------
@@ -121,7 +119,7 @@ select * from fcm_flatrecord;
     and a.CltNo like '0010103'
   order by a.CaId desc
 --------------
-select * from FCM_Spot_TXApply;
+select * from FCM_SPOT_TXAPPLY;
 -----------------------
 select * from fcm_sheetflat_map;
 -----------------------
@@ -129,6 +127,8 @@ select * from fcm_flatrecord;
 
 ------------------------------
 select * from fcm_synthetical_cashset_log;
+
+select * from gtsa_account acc where acc.account_no  like '2345%';
 
 
 -------------------------------------
@@ -294,3 +294,109 @@ select t1.account_id,
   where t1.account_state = 1
 /
 -----
+select * from wfpage w where w.appno like 'FCM%' ;
+select * from wf_menu_tree t where t.pageno = '1D78709C-DD86-7123-5EE5-9F68CF03D692';
+update wf_menu_tree t set t.pmid = 'FCM64322483' where t.pageno = '1D78709C-DD86-7123-5EE5-9F68CF03D692';
+select * from wf_menu_tree t where t.menuid like 'FCM%';
+
+select * from fcm_synthetical_cashset;
+
+-------------------------------------------
+
+select t.create_date from fcm_synthetical_cashset_log t ;
+
+select * from fcm_synthetical_cashset_log t order by t.log_id desc;
+
+
+select * from fcm_synthetical_cashset;
+
+select *
+  from fcm_synthetical_cashset_log l
+ where l.log_id = (select max(l2.log_id)
+                     from fcm_synthetical_cashset_log l2
+                    where trunc(l.create_date,'dd') = trunc(l2.create_date,'dd'))
+;
+
+select sysdate from dual;
+
+select * from wfpage w where w.appno like 'FCM%';
+
+select * from WF_MENU_TREE w where w.menuid like 'FCM%';
+
+INSERT INTO WFPAGE (PAGENO,APPNO,URL,PAGENAME,CAPTION,RSPMODE)
+SELECT 'DB6A5AC2-6580-AEA5-6566-810BD16BC9EF','FCM','syntheticalCashSetQuery.FCM.do','结售汇系统/查询统计/结售汇综合头寸查询','结售汇系统/查询统计/结售汇综合头寸查询',1 FROM DUAL WHERE NOT EXISTS 
+(SELECT 1 FROM WFPAGE W WHERE W.PAGENO='DB6A5AC2-6580-AEA5-6566-810BD16BC9EF')
+/
+INSERT INTO WF_MENU_TREE
+  (MENUID,
+   CAPTION,
+   PMID,
+   ISLEAF,
+   IN_NEW_WINDOW,
+   PAGENO,
+   DESCRIPTION,
+   PATH,
+   SORTNUM)
+  SELECT 'FCM010107',
+         '结售汇综合头寸查询',
+         'FCM63728389',
+         1,
+         0,
+         'DB6A5AC2-6580-AEA5-6566-810BD16BC9EF',
+         '综合头寸设置',
+         '结售汇系统/系统设置/综合头寸设置',
+         '010107'
+    FROM DUAL
+   WHERE NOT EXISTS (SELECT 1 FROM WF_MENU_TREE WHERE MENUID = 'FCM010107') 
+/
+--------------------------------
+
+select * from fcm_synthetical_cashset_log ;
+select * from fcm_synthetical_cashset;
+update fcm_synthetical_cashset_log l set l.create_date = sysdate -1;
+
+select *
+  from fcm_synthetical_cashset_log t
+ where 1 = 1
+   and t.create_date >= #cashDateStart#
+   and t.create_date <= #cashDateEnd#
+ order by t.log_id desc;
+
+------------------------
+
+select *
+  from fcm_synthetical_cashset_log t
+ where t.log_id =
+       (select max(l2.log_id)
+          from fcm_synthetical_cashset_log l2
+         where trunc(l2.create_date, 'dd') = trunc(sysdate - 1, 'dd'))
+------------------------------------
+
+
+select *
+  from safeexchangerate sf
+ where sf.targbz = 'EUR'
+   and sf.id = (select max(sf2.id)
+                       from safeexchangerate sf2
+                      where sf2.targbz = sf.targbz);
+select * from fcm_spot_txapply;
+select *
+    from (select *
+            from safeexchangerate sf
+           where /*sf.stanbz = 'USD'
+             and*/ sf.targbz = #currencyNo#
+           order by sf.actdate desc)
+	 where rownum = 1 ;
+
+
+---------------------------------------
+
+select * from fcm_spot_txapply t where t.caid = 242;
+
+
+    select *
+      from safeexchangerate sf
+     where sf.targbz = 'EUR'
+       and sf.id = (select max(sf2.id)
+                      from safeexchangerate sf2
+                     where sf2.targbz = sf.targbz)
