@@ -387,3 +387,378 @@ select *
              and*/ sf.targbz = #currencyNo#
            order by sf.actdate desc)
 	 where rownum = 1 ;
+
+
+---------------------------------------
+
+select * from fcm_spot_txapply t where t.caid = 242;
+
+
+    select *
+      from safeexchangerate sf
+     where sf.targbz = 'EUR'
+       and sf.id = (select max(sf2.id)
+                      from safeexchangerate sf2
+                     where sf2.targbz = sf.targbz)
+-------------------------------
+
+
+DECLARE
+  cnt INTEGER;
+BEGIN
+  SELECT COUNT(0)
+    INTO cnt
+    FROM User_Tables A
+   WHERE A.TABLE_NAME = UPPER('FCM_SYNTHETICAL_CASHSET');
+
+  IF cnt = 0 THEN
+    EXECUTE IMMEDIATE '
+    create table FCM_SYNTHETICAL_CASHSET 
+    (
+       CASH_ID              integer              not null,
+       BEGIN_CASH           NUMBER(15,2),
+       UPPER_LIMIT_CASH     NUMBER(15,2),
+       LOWER_LIMIT_CASH     NUMBER(15,2),
+       CURRENT_CASH         NUMBER(15,2),
+       CASH_DATE            DATE,
+       CASH_SWITCH          INTEGER,
+       constraint PK_FCM_SYNTHETICAL_CASHSET primary key (CASH_ID)
+    )
+    ';
+  else
+  
+    select count(0)
+      into cnt
+      from user_tab_columns c
+     where c.COLUMN_NAME = 'CASH_SWITCH'
+       and c.TABLE_NAME = UPPER('FCM_SYNTHETICAL_CASHSET');
+  
+    if cnt = 0 then
+      execute immediate 'alter table FCM_SYNTHETICAL_CASHSET add CASH_SWITCH INTEGER';
+    end if;
+  END IF;
+END;
+
+select * from FCM_SYNTHETICAL_CASHSET t where t.cash_type = 1
+alter table FCM_SYNTHETICAL_CASHSET drop column cash_switch;
+---------------------------------
+
+update gtsa_account t set t.inner_account_no = #innerAccountNo# where t.account_no = #accountNo# ;
+
+select *
+  from fcm_synthetical_cashset_log l2
+ where l2.cash_id = (select t.cash_id
+                       from fcm_synthetical_cashset t
+                      where t.cash_type = 2)
+--------------------------------------------------
+
+
+
+insert into fcm_flatrecord
+  (frId,
+   tradeflowno,
+   txchannel,
+   tradedate,
+   txdir,
+   febz,
+   fcamt,
+   rate,
+   rmbamt,
+   bank,
+   txtype,
+   feeamt,
+   feacntno,
+   rmbacntno,
+   memo,
+   state,
+   isSelf)
+values
+  (se_fcm_flatrecord.nextval,
+   '20160316-8',
+   0,
+   to_date('2016-03-16 00:00:00', 'yyyy-mm-dd hh24:mi:ss'),
+   1,
+   'EUR',
+   100.0,
+   1.222,
+   8.14,
+   '002',
+   '001',
+   0.0,
+   '15822690644',
+   '6666888',
+   'cccccc',
+   '0',
+   'yes')
+;
+
+
+
+
+insert into fcm_flatrecord
+  (frId,
+   tradeflowno,
+   txchannel,
+   tradedate,
+   txdir,
+   febz,
+   fcamt,
+   rate,
+   rmbamt,
+   bank,
+   txtype,
+   feeamt,
+   feacntno,
+   rmbacntno,
+   memo,
+   state,
+   isSelf)
+values
+  (se_fcm_flatrecord.nextval,
+   '20160316-8',
+   0,
+   to_date('2016-03-16 00:00:00', 'yyyy-mm-dd hh24:mi:ss'),
+   0,
+   'EUR',
+   100.0,
+   1.222,
+   8.14,
+   '002',
+   '001',
+   0.0,
+   '15822690644',
+   '6666888',
+   'cccccc',
+   '0',
+   'yes')
+;
+
+
+
+insert into fcm_flatrecord
+  (frId,
+   tradeflowno,
+   txchannel,
+   tradedate,
+   txdir,
+   febz,
+   fcamt,
+   rate,
+   rmbamt,
+   bank,
+   txtype,
+   feeamt,
+   feacntno,
+   rmbacntno,
+   memo,
+   state,
+   isSelf)
+values
+  (se_fcm_flatrecord.nextval,
+   '20160316-8',
+   0,
+   to_date('2016-03-16 00:00:00', 'yyyy-mm-dd hh24:mi:ss'),
+   0,
+   'EUR',
+   100.0,
+   1.222,
+   8.14,
+   '002',
+   '001',
+   0.0,
+   '15822690644',
+   '6666888',
+   'cccccc',
+   '0',
+   'no')
+;
+
+
+insert into fcm_flatrecord
+  (frId,
+   tradeflowno,
+   txchannel,
+   tradedate,
+   txdir,
+   febz,
+   fcamt,
+   rate,
+   rmbamt,
+   bank,
+   txtype,
+   feeamt,
+   feacntno,
+   rmbacntno,
+   memo,
+   state,
+   isSelf)
+values
+  (se_fcm_flatrecord.nextval,
+   '20160316-8',
+   0,
+   to_date('2016-03-16 00:00:00', 'yyyy-mm-dd hh24:mi:ss'),
+   0,
+   'EUR',
+   100.0,
+   1.222,
+   8.14,
+   '002',
+   '001',
+   0.0,
+   '15822690644',
+   '6666888',
+   'cccccc',
+   '0',
+   'no')
+;
+------------------
+  
+  select LOG_ID,
+         CASH_ID,
+         TX_DIR,
+         TX_TYPE,
+         TX_ID,
+         BEGIN_AMOUNT,
+         END_AMOUNT,
+         FOREIGN_AMOUNT,
+         CREATE_DATE,
+         CASH_DIR
+    from fcm_synthetical_cashset_log l2
+   where l2.cash_id = (select t.cash_id
+                         from fcm_synthetical_cashset t
+                        where t.cash_type = 2)
+     and trunc(l2.create_date, 'dd') >= '2016-03-09 00:00:00.0'
+     and trunc(l2.create_date, 'dd') <= '2016-03-16 00:00:00.0'
+   order by l2.log_id desc
+--------------------------------------------
+
+select           CASH_ID, BEGIN_CASH, UPPER_LIMIT_CASH, LOWER_LIMIT_CASH, CURRENT_CASH, CASH_DATE,CASH_SWITCH        from FCM_SYNTHETICAL_CASHSET
+
+----------------------------------
+
+ 
+ select LOG_ID,
+        CASH_ID,
+        TX_DIR,
+        TX_TYPE,
+        TX_ID,
+        BEGIN_AMOUNT,
+        END_AMOUNT,
+        FOREIGN_AMOUNT,
+        CREATE_DATE,
+        CASH_DIR
+   from fcm_synthetical_cashset_log t
+  where t.log_id =
+        (select max(l2.log_id)
+           from fcm_synthetical_cashset_log l2
+          where l2.cash_id = (select s2.cash_id
+                                from fcm_synthetical_cashset s2
+                               where s2.cash_type = 2)
+            and trunc(l2.create_date, 'dd') <= trunc(sysdate, 'dd'));
+            
+            select * from fcm_synthetical_cashset_log;
+
+
+insert into wf_rss
+  (appno, panel_url, title, more_url)
+  select 'FCM', 'syntheticalCashSetAlert.FCM.do', '集中收汇确认提醒', ''
+    from dual
+
+
+
+select * from wf_rss wf where wf.appno = 'FCM';
+
+update wf_rss wf set wf.title = '结售汇综合头寸提醒' where wf.appno = 'FCM';
+
+select * from wf_rss wf ;
+
+select * from wfpage w where w.pageno = '3B0C9962-334F-50B0-5C33-5DCDDE4A268C';
+
+
+-----------------------------
+
+insert into wf_rss
+  (appno, panel_url, title, more_url)
+  select 'FCM', 'syntheticalCashSetAlert.FCM.do', '结售汇综合头寸提醒', '3B0C9962-334F-50B0-5C33-5DCDDE4A268C'
+    from dual
+   where not exists
+   (select *
+            from wf_rss S
+           WHERE S.more_url = '3B0C9962-334F-50B0-5C33-5DCDDE4A268C')
+       ;
+       
+       
+       delete from wf_rss t where t.appno = 'FCM';
+
+
+insert into wf_rss
+  (appno, panel_url, title, more_url)
+  select 'FCM', 'syntheticalCashSetAlert.FCM.do', '结售汇综合头寸提醒', 'ECF55C03-7F2A-20DB-D024-C42448A484E3'
+    from dual
+   where not exists
+   (select *
+            from wf_rss S
+           WHERE S.more_url = 'ECF55C03-7F2A-20DB-D024-C42448A484E3')
+/
+
+
+select * from aims_account ;
+
+-------------------------------------------
+
+
+delete from fcm_synthetical_cashset_log;
+delete from fcm_synthetical_cashset;
+
+select * from FCM_SYNTHETICAL_CASHSET  ;-- for update;
+
+select * from Fcm_Synthetical_Cashset_Log l2
+
+ where l2.cash_id = 2 ;
+
+update fcm_synthetical_cashset_log t set t.create_date = sysdate -1;
+
+select * from safeexchangerate sf ;
+
+update fcm_synthetical_cashset  t set t.current_cash = 100 where t.cash_id = 1;
+select * from fcm_spot_txsheet ; 
+select * from fcm_spot_txapply ;
+
+select * from fcm_synthetical_cashset_log;
+----------------------------------------
+
+  select LOG_ID,
+         CASH_ID,
+         TX_DIR,
+         TX_TYPE,
+         TX_ID,
+         BEGIN_AMOUNT,
+         END_AMOUNT,
+         FOREIGN_AMOUNT,
+         CREATE_DATE,
+         CASH_DIR
+    from fcm_synthetical_cashset_log l2
+   where l2.cash_id = (select t.cash_id
+                         from fcm_synthetical_cashset t
+                        where t.cash_type = 2)
+  
+   order by l2.log_id asc;
+----------------------------------------------------------------------------------
+select * from wfpage w where w.pageno = 'ECF55C03-7F2A-20DB-D024-C42448A484E3';
+
+
+
+INSERT INTO WFPAGE (PAGENO,APPNO,URL,PAGENAME,CAPTION,RSPMODE)
+SELECT 'ECF55C03-7F2A-20DB-D024-C42448A484E3','FCM','syntheticalCashSetAlert.FCM.do','结售汇综合头寸提醒','结售汇综合头寸提醒',1 FROM DUAL WHERE NOT EXISTS 
+(SELECT 1 FROM WFPAGE W WHERE W.PAGENO='ECF55C03-7F2A-20DB-D024-C42448A484E3')
+/
+
+select * from fcm_synthetical_cashset_log l2 where l2.create_date <= trunc(sysdate -1,'dd') and l2.log_id = (select * from fcm_syn);
+
+
+delete from wf_rss  w where w.appno = 'FCM';
+select * from wf_rss w ;
+select * from wfpage w where w.appno like 'FCM%';
+
+
+select * from fcm_synthetical_cashset_log;
