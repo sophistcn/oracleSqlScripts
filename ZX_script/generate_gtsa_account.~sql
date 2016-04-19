@@ -1,3 +1,35 @@
+select * from admp_standard_bank ;
+select * from gtsa_bank_info;
+select trunc(dbms_random.value(1,3)) from dual;
+select *,um.code from um_country um;
+select * from cnaps;
+select dbms_random.string('U',8) from dual;
+begin
+  for v_stb in (select * from admp_standard_bank sbk) loop
+    for v_cnp in (select *
+                    from (select * from cnaps cn order by dbms_random.random)
+                   where rownum < 100) loop
+    
+      insert into gtsa_bank_info gbk
+      values
+        (gtsa_bank_id_seq.nextval,
+         trunc(dbms_random.value(1, 3)),
+         'USA',
+         v_stb.bank_code,
+         dbms_random.string('U', 8),
+         '01',
+         '01',
+         'english01',
+         v_cnp.cnapsno,
+         v_cnp.opbankname,
+         '备注' || trunc(dbms_random.value(1, 30000)));
+    end loop;
+  end;
+  
+select * from gtsa_account_type;
+
+ insert into gtsa_bank_info values (gtsa_bank_id_seq.nextval, trunc(dbms_random.value(1,3)), 'USA','01','DDFFGGDD','01','01','english01', '001806461002','中国人民银行清涧县支行','remarks');
+
 insert into gtsa_account
   (ACCOUNT_ID,
    BANK_ID,
@@ -23,10 +55,10 @@ values
    2,
    1,
    null,
-   'USD',
+   'GBP',
    'wzp' ||   trunc(dbms_random.value(0,100000)),
    '23423',
-   '01',
+   '002001',
    null,
    0.00,
    0.00,
@@ -100,7 +132,8 @@ values
    null,
    999999.0000,
    '15-12月-15 03.53.58.000000 下午');
-   
+---------------------------------
+/*为所有账户创建余额*/
    begin 
      for acc in (select t1.account_no from gtsa_account t1 ) loop
        dbms_output.put_line(acc.account_no);

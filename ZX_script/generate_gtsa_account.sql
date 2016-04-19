@@ -1,3 +1,37 @@
+select * from admp_standard_bank ;
+select * from gtsa_bank_info;
+select trunc(dbms_random.value(1,3)) from dual;
+select *,um.code from um_country um;
+select * from cnaps;
+select dbms_random.string('U',8) from dual;
+begin
+  for v_stb in (select * from admp_standard_bank sbk) loop
+    for v_cnp in (select *
+                    from (select * from cnaps cn order by dbms_random.random)
+                   where rownum < 100) loop
+    
+      insert into gtsa_bank_info gbk
+      values
+        (gtsa_bank_id_seq.nextval,
+         trunc(dbms_random.value(1, 3)),
+         'USA',
+         v_stb.bank_code,
+         dbms_random.string('U', 8),
+         '01',
+         '01',
+         'english01',
+         v_cnp.cnapsno,
+         v_cnp.opbankname,
+         '备注' || trunc(dbms_random.value(1, 30000)));
+         commit;
+    end loop;
+    end loop;
+  end;
+  
+select * from gtsa_account_type;
+
+ insert into gtsa_bank_info values (gtsa_bank_id_seq.nextval, trunc(dbms_random.value(1,3)), 'USA','01','DDFFGGDD','01','01','english01', '001806461002','中国人民银行清涧县支行','remarks');
+
 insert into gtsa_account
   (ACCOUNT_ID,
    BANK_ID,
@@ -23,10 +57,10 @@ values
    2,
    1,
    null,
-   'USD',
+   'GBP',
    'wzp' ||   trunc(dbms_random.value(0,100000)),
    '23423',
-   '01',
+   '002001',
    null,
    0.00,
    0.00,
@@ -61,7 +95,7 @@ values
 values
   (gtsa_account_id_seq.nextval,
    1,
-   5,
+   trunc(dbms_random.value(1,6)),
    1,
    null,
    'USD',
@@ -128,6 +162,7 @@ values
            null,
            trunc(dbms_random.value(0,100000)),
            sysdate);
+           commit;
       end loop;
       
     end;
@@ -163,12 +198,11 @@ begin
          ACCOUNT_LOCATION,
          CLT_ADDRESS,
          ACCOUNT_SOURCE_FROM,
-         CONNECT_WAY,
-         ACCOUNT_CODE)
+         CONNECT_WAY)
       values
         (gtsa_account_id_seq.nextval,
          bk.bank_id,
-         5,
+         trunc(dbms_random.value(1,6)),
          1,
          null,
          curCode.Codeno,
@@ -182,9 +216,8 @@ begin
          '1',
          '地址' || trunc(dbms_random.value(0, 100000)),
          1,
-         1,
- null);
-    
+         1);
+    commit;
     end loop;
   end loop;
 end;
