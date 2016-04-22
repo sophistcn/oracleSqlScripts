@@ -14,3 +14,16 @@ imp fss/fss@localhost:1521/xe full=y file=G:\db_backup\Nstc006_fss.dmp log=G:\db
 exp fss/fss@xe file=G:\db_backup\n9.fss.base.dmp ; --full=y ;
 
 imp fss/fss@xe file=G:\db_backup\n9.fss.base.dmp ;
+
+
+exp sms/sms@xe file=G:\db_backup\n9.sms.base.dmp ; --full=y ;
+
+imp sms1/sms1@xe file=G:\db_backup\n9.sms.base.dmp ;
+
+exp fss/fss@xe owner="fss" file="G:\db_backup\n9.fss.base.test.dmp" feedback=1024000 full=y;
+
+imp fss1/fss1@xe fromuser="fss" touser="fss1" file="G:\db_backup\n9.fss.base.dmp" ignore=y feedback=5000
+
+
+
+imp sms1/sms1@xe fromuser="sms" touser="sms1" file="G:\db_backup\n9.sms.base.dmp" ignore=y feedback=5000

@@ -32,3 +32,20 @@ create user sms identified by sms;
 grant dba to sms;
 grant connect, resource to sms;
 
+
+create user sms1 identified by sms1;
+grant dba to sms1;
+grant connect, resource to sms1;
+
+create user fss1 identified by fss1;
+grant dba to fss1;
+grant connect, resource to fss1;
+
+
+create user fss2 identified by fss2;
+grant dba to fss2;
+grant connect, resource to fss2;
+
+
+
+imp fss2/fss2@xe fromuser="fss" touser="fss2" file="G:\db_backup\n9.fss.base.test.dmp" ignore=y feedback=5000
