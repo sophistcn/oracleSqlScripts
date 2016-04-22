@@ -8,3 +8,9 @@ exp system/********@NSDEV1 owner="NSTCSA7684" file="D:/NSTC_BACKUP/NSDEV1_NSTCSA
 
 imp system/********@NSDEV1 fromuser="NSTCSA7684" touser="NSTCSA4642" file="D:/NSTC_BACKUP/NSDEV1_NSTCSA7684_20160314_112741.DMP" ignore=y feedback=5000
 
+imp fss/fss@localhost:1521/xe full=y file=G:\db_backup\Nstc006_fss.dmp log=G:\db_backup\import.log  ignore=y;
+
+
+exp fss/fss@xe file=G:\db_backup\n9.fss.base.dmp ; --full=y ;
+
+imp fss/fss@xe file=G:\db_backup\n9.fss.base.dmp ;
