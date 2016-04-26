@@ -46,6 +46,15 @@ create user fss2 identified by fss2;
 grant dba to fss2;
 grant connect, resource to fss2;
 
+drop user sms2 cascade;
+create user sms2 identified by sms2;
+grant dba to sms2;
+grant connect, resource to sms2;
 
+
+
+create user bp3 identified by bp3;
+grant dba to bp3;
+grant connect, resource to bp3;
 
 imp fss2/fss2@xe fromuser="fss" touser="fss2" file="G:\db_backup\n9.fss.base.test.dmp" ignore=y feedback=5000

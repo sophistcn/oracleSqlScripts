@@ -27,3 +27,6 @@ imp fss1/fss1@xe fromuser="fss" touser="fss1" file="G:\db_backup\n9.fss.base.dmp
 
 
 imp sms1/sms1@xe fromuser="sms" touser="sms1" file="G:\db_backup\n9.sms.base.dmp" ignore=y feedback=5000
+
+
+imp sms2/sms2@xe fromuser="sms" touser="sms2" file="G:\db_backup\n9.sms.base.dmp" ignore=y feedback=5000
