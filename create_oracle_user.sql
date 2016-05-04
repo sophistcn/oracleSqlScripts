@@ -57,4 +57,10 @@ create user bp3 identified by bp3;
 grant dba to bp3;
 grant connect, resource to bp3;
 
+
+
+create user my_lucene identified by my_lucene;
+grant dba to my_lucene;
+grant connect, resource to my_lucene;
+
 imp fss2/fss2@xe fromuser="fss" touser="fss2" file="G:\db_backup\n9.fss.base.test.dmp" ignore=y feedback=5000
