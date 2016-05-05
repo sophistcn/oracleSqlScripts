@@ -1,0 +1,1 @@
+rd D:\webapp_ckzbj\apache-tomcat-6.0.32_DRS_Portal\work /S /Q

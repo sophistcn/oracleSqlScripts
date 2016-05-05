@@ -1,0 +1,1 @@
+xcopy D:\DEV\works\ProD\FCM\src\web\page\* D:\webapp_ckzbj\app\FCM\FCM-ROOT\page\ /Y

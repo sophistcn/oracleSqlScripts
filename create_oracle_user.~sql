@@ -33,10 +33,12 @@ grant dba to sms;
 grant connect, resource to sms;
 
 
+drop user sms1 cascade;
 create user sms1 identified by sms1;
 grant dba to sms1;
 grant connect, resource to sms1;
 
+drop user fss1 cascade;
 create user fss1 identified by fss1;
 grant dba to fss1;
 grant connect, resource to fss1;

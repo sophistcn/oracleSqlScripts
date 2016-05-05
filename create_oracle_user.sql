@@ -33,10 +33,12 @@ grant dba to sms;
 grant connect, resource to sms;
 
 
+drop user sms1 cascade;
 create user sms1 identified by sms1;
 grant dba to sms1;
 grant connect, resource to sms1;
 
+drop user fss1 cascade;
 create user fss1 identified by fss1;
 grant dba to fss1;
 grant connect, resource to fss1;
@@ -62,5 +64,14 @@ grant connect, resource to bp3;
 create user my_lucene identified by my_lucene;
 grant dba to my_lucene;
 grant connect, resource to my_lucene;
+
+
+create user fss01 identified by fss01;
+grant dba to fss01;
+grant connect, resource to fss01;
+
+create user sms01 identified by sms01;
+grant dba to sms01;
+grant connect, resource to sms01;
 
 imp fss2/fss2@xe fromuser="fss" touser="fss2" file="G:\db_backup\n9.fss.base.test.dmp" ignore=y feedback=5000

@@ -1,0 +1,1083 @@
+10:11:39 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+10:11:39 INFO  [CollectionFactory] JDK 1.4+ collections available
+10:11:39 INFO  [CollectionFactory] Commons Collections 3.x available
+10:11:45 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+10:11:45 INFO  [CollectionFactory] JDK 1.4+ collections available
+10:11:45 INFO  [CollectionFactory] Commons Collections 3.x available
+10:11:45 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GDPS-CFG/GDPS-root-applicationcontext.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GDPS-CFG/GDPS-remote-config.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/OCS-Web-CFG/OCS-Web-root-applicationcontext.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-root-applicationcontext.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-orm-mapping.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BMMS-CFG/bmms-root-applicationcontext.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BMMS-CFG/bmms-common-config.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admin-CFG/admin-root-applicationcontext.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/SDM-Web-CFG/SDM-Web-root-applicationcontext.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTCP-CFG/GTCP-root-applicationcontext.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTCP-CFG/GTCP-orm-mapping.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admp-CFG/admp-root-applicationcontext.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [waf-framework/waf-applicationcontext.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from URL [jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/SmartPage-1.4.3.3.jar!/server/smp-httpclient-config.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from URL [jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/SmartPage-1.4.3.3.jar!/server/smp-root-applicationcontext.xml]
+10:11:46 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from URL [jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/SmartPage-1.4.3.3.jar!/server/smp-orm-mapping.xml]
+10:11:46 INFO  [XmlWebApplicationContext] Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [BILL.propertyConfigurer,GDPS.locator,BILL.dataSource,GDPS.smpSqlMapClient,BILL.txService,BILL.caseHandler,BILL.billTxProcess,BILL.GDPSAllocation,BILL.txHandlerFac,BILL.txHandlerSupport,BILL.commonTxHandler,BILL.castBmmsTxHandler,BILL.registTxHandler,BILL.outOfWarehouseTxHandler,BILL.savePayeeConfigTxHandler,BILL.limitOutTxHandler,BILL.limitCommonTxHandler,BILL.txHandler_T106,BILL.txHandler_T116,BILL.txHandler_T120,BILL.txHandler_T101,BILL.txHandler_T107,BILL.txHandler_T117,BILL.txHandler_T105,BILL.txHandler_T115,BILL.txHandler_T201,BILL.txHandler_T202,BILL.txHandler_T203,BILL.txHandler_T204,BILL.txHandler_T205,BILL.txHandler_T108,BILL.txHandler_T123,BILL.txHandler_T113,BILL.txHandler_T124,BILL.txHandler_T139,BILL.txHandler_T137,BILL.txHandler_T138,BILL.txHandler_T119,BILL.txHandler_T121,BILL.txHandler_T111,BILL.txHandler_T122,BILL.txHandler_T104,BILL.txHandler_T114,BILL.txHandler_T102,BILL.txHandler_T109,BILL.txHandler_T103,BILL.txHandler_T110,BILL.txHandler_T126,BILL.txHandler_T112,BILL.txHandler_T125,BILL.txHandler_T127,BILL.txHandler_T128,BILL.txHandler_T129,BILL.txHandler_T130,BILL.txHandler_T131,BILL.txHandler_T132,BILL.txHandler_T133,BILL.txHandler_T134,BILL.txHandler_T136,BILL.txHandler_T206,BILL.txHandler_T301,BILL.txServer,BILL.txLogServer,BILL.ledgerServer,BILL.billServer,GDPS.gdpsBaseConfigServer,BILL.memberServer,BILL.wareHouseServer,BILL.bankAccountServer,BILL.actFunServer,BILL.bankBizTypeServer,BILL.bankServer,BILL.billTxFlowServer,BILL.baseDao,BILL.txDao,BILL.outletDao,BILL.txBillDao,BILL.txLogDao,BILL.ledgerDao,BILL.billDao,GDPS.billPayeeAccountDao,GDPS.billPayeeConfigDao,BILL.memberDao,BILL.billWareHouseDao,BILL.bankAccountDao,BILL.bankBizTypeDao,BILL.bankDao,BILL.sysParamDao,BILL.billTxFlowDao,GDPS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,GDPS.excelParser,GDPS.validateExcel,GDPS.validateCommon,GDPS.validateT101,GDPS.validateT105,GDPS.validateT115,GDPS.validateT201,GDPS.validateT202,GDPS.validateT206,GDPS.validateT305,GDPS.budgetHelper,GDPS.budgetService,GDPS.txterm,GDPS.bcode,GDPS.firm,GDPS.budgetTermValidator,GDPS.quota,GDPS.validatorFactory,BILL.sysConfig,framework.springBeanFactory,GDPS.parserHelper,GDPS.castGDPSModelUtil,GDPS.urlMapping,GDPS.billBeanConverter,GDPS.BPService,GDPS.BPConnCallback,GDPS.connCallback.remoting,GDPS.DBMS.remoting,GDPS.remoteDbmsService,GDPS.gdpsService,GDPS.commonSysBizHandlerFactory,GDPS.default,GDPS.cfbserverhelper,GDPS.cfbEventServer,GDPS.bmsRemoteService,GDPS.ebdEventServer,GDPS.ebdServer,GDPS.ebdDataFactory,GDPS.defaultMapper_105,GDPS.defaultMapper_121,GDPS.defaultMapper_137,GDPS.defaultMapper_138,GDPS.gdpsRemoteService,GDPS.xerpEventServer,GDPS.cnapsService,GDPS.callBackService,GDPS.callBackFactory,GDPS.G6callBack,OCS-Web.propertyConfigurer,OCS-Web.ajaxActionRegister,OCS-Web.smpSqlMapClient,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,BMMS.propertyConfigurer,BMMS.baseDao,BMMS.smpSqlMapClient,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#2,BMMS.transactionInterceptor,BMMS.locator,BMMS.bmmsProcess,BMMS.businessService,BMMS.businessHandlerFactory,BMMS.busiHandler_change,BMMS.busiHandler_modifyDraft,BMMS.busiHandler_end,BMMS.busiHandler_disable,BMMS.busiHandler_out,BMMS.busiHandler_enterDraft,BMMS.busiHandler_changeDraft,BMMS.busiCommenHandler,BMMS.busiHandlerSupport,BMMS.parserHelper,BMMS.excelParser,BMMS.validateExcel,BMMS.validateCommon,BMMS.validateDraft,BMMS.validateCheck,BMMS.validateDlc,BMMS.validateIlc,BMMS.validateLg,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources#1,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,SDM-Web.propertyConfigurer,SDM-Web.actionRegister,GTCP.propertyConfigurer,GTCP.sqlMapClient,GTCP.rootDao,GTCP.daoFacade,GTCP.commonDao,GTCP.baseServer,GTCP.locator,GTCP.commonService,GTCP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#3,admp.smpSqlMapClient,baseDataDAO,baseDataService,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient,SMP.propertyConfigurer,SMP.httpInvokerRequestExecutor,SMP.httpclient,SMP.connectionManager,SMP.connectionManagerParams,SMP.locator,SMP.workButtonBusiness,SMP.uMHandleService,SMP.uMHandleDao,SMP.sqlMapClientTemplate,SMP.smpSqlMapClient,com.nstc.framework.core.Resources,SMP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#4]; root of BeanFactory hierarchy
+10:11:46 INFO  [XmlWebApplicationContext] 277 beans defined in application context [Root WebApplicationContext]
+10:11:47 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+10:11:47 INFO  [PropertyPlaceholderConfigurer] Loading properties file from class path resource [smartform.properties]
+10:11:47 INFO  [PropertyPlaceholderConfigurer] Loading properties file from class path resource [common.properties]
+10:11:47 INFO  [CollectionFactory] JDK 1.4+ collections available
+10:11:47 INFO  [CollectionFactory] Commons Collections 3.x available
+10:11:47 INFO  [DefaultAopProxyFactory] CGLIB2 available: proxyTargetClass feature enabled
+10:11:47 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:11:47 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:11:47 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#2' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:11:47 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#3' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:11:47 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#4' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:11:47 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [BILL.propertyConfigurer,GDPS.locator,BILL.dataSource,GDPS.smpSqlMapClient,BILL.txService,BILL.caseHandler,BILL.billTxProcess,BILL.GDPSAllocation,BILL.txHandlerFac,BILL.txHandlerSupport,BILL.commonTxHandler,BILL.castBmmsTxHandler,BILL.registTxHandler,BILL.outOfWarehouseTxHandler,BILL.savePayeeConfigTxHandler,BILL.limitOutTxHandler,BILL.limitCommonTxHandler,BILL.txHandler_T106,BILL.txHandler_T116,BILL.txHandler_T120,BILL.txHandler_T101,BILL.txHandler_T107,BILL.txHandler_T117,BILL.txHandler_T105,BILL.txHandler_T115,BILL.txHandler_T201,BILL.txHandler_T202,BILL.txHandler_T203,BILL.txHandler_T204,BILL.txHandler_T205,BILL.txHandler_T108,BILL.txHandler_T123,BILL.txHandler_T113,BILL.txHandler_T124,BILL.txHandler_T139,BILL.txHandler_T137,BILL.txHandler_T138,BILL.txHandler_T119,BILL.txHandler_T121,BILL.txHandler_T111,BILL.txHandler_T122,BILL.txHandler_T104,BILL.txHandler_T114,BILL.txHandler_T102,BILL.txHandler_T109,BILL.txHandler_T103,BILL.txHandler_T110,BILL.txHandler_T126,BILL.txHandler_T112,BILL.txHandler_T125,BILL.txHandler_T127,BILL.txHandler_T128,BILL.txHandler_T129,BILL.txHandler_T130,BILL.txHandler_T131,BILL.txHandler_T132,BILL.txHandler_T133,BILL.txHandler_T134,BILL.txHandler_T136,BILL.txHandler_T206,BILL.txHandler_T301,BILL.txServer,BILL.txLogServer,BILL.ledgerServer,BILL.billServer,GDPS.gdpsBaseConfigServer,BILL.memberServer,BILL.wareHouseServer,BILL.bankAccountServer,BILL.actFunServer,BILL.bankBizTypeServer,BILL.bankServer,BILL.billTxFlowServer,BILL.baseDao,BILL.txDao,BILL.outletDao,BILL.txBillDao,BILL.txLogDao,BILL.ledgerDao,BILL.billDao,GDPS.billPayeeAccountDao,GDPS.billPayeeConfigDao,BILL.memberDao,BILL.billWareHouseDao,BILL.bankAccountDao,BILL.bankBizTypeDao,BILL.bankDao,BILL.sysParamDao,BILL.billTxFlowDao,GDPS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,GDPS.excelParser,GDPS.validateExcel,GDPS.validateCommon,GDPS.validateT101,GDPS.validateT105,GDPS.validateT115,GDPS.validateT201,GDPS.validateT202,GDPS.validateT206,GDPS.validateT305,GDPS.budgetHelper,GDPS.budgetService,GDPS.txterm,GDPS.bcode,GDPS.firm,GDPS.budgetTermValidator,GDPS.quota,GDPS.validatorFactory,BILL.sysConfig,framework.springBeanFactory,GDPS.parserHelper,GDPS.castGDPSModelUtil,GDPS.urlMapping,GDPS.billBeanConverter,GDPS.BPService,GDPS.BPConnCallback,GDPS.connCallback.remoting,GDPS.DBMS.remoting,GDPS.remoteDbmsService,GDPS.gdpsService,GDPS.commonSysBizHandlerFactory,GDPS.default,GDPS.cfbserverhelper,GDPS.cfbEventServer,GDPS.bmsRemoteService,GDPS.ebdEventServer,GDPS.ebdServer,GDPS.ebdDataFactory,GDPS.defaultMapper_105,GDPS.defaultMapper_121,GDPS.defaultMapper_137,GDPS.defaultMapper_138,GDPS.gdpsRemoteService,GDPS.xerpEventServer,GDPS.cnapsService,GDPS.callBackService,GDPS.callBackFactory,GDPS.G6callBack,OCS-Web.propertyConfigurer,OCS-Web.ajaxActionRegister,OCS-Web.smpSqlMapClient,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,BMMS.propertyConfigurer,BMMS.baseDao,BMMS.smpSqlMapClient,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#2,BMMS.transactionInterceptor,BMMS.locator,BMMS.bmmsProcess,BMMS.businessService,BMMS.businessHandlerFactory,BMMS.busiHandler_change,BMMS.busiHandler_modifyDraft,BMMS.busiHandler_end,BMMS.busiHandler_disable,BMMS.busiHandler_out,BMMS.busiHandler_enterDraft,BMMS.busiHandler_changeDraft,BMMS.busiCommenHandler,BMMS.busiHandlerSupport,BMMS.parserHelper,BMMS.excelParser,BMMS.validateExcel,BMMS.validateCommon,BMMS.validateDraft,BMMS.validateCheck,BMMS.validateDlc,BMMS.validateIlc,BMMS.validateLg,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources#1,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,SDM-Web.propertyConfigurer,SDM-Web.actionRegister,GTCP.propertyConfigurer,GTCP.sqlMapClient,GTCP.rootDao,GTCP.daoFacade,GTCP.commonDao,GTCP.baseServer,GTCP.locator,GTCP.commonService,GTCP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#3,admp.smpSqlMapClient,baseDataDAO,baseDataService,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient,SMP.propertyConfigurer,SMP.httpInvokerRequestExecutor,SMP.httpclient,SMP.connectionManager,SMP.connectionManagerParams,SMP.locator,SMP.workButtonBusiness,SMP.uMHandleService,SMP.uMHandleDao,SMP.sqlMapClientTemplate,SMP.smpSqlMapClient,com.nstc.framework.core.Resources,SMP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#4]; root of BeanFactory hierarchy]
+10:11:47 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [bmms-datasource.xml]
+10:11:47 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [bmms-service-context.xml]
+10:11:47 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [bmms-common-config.xml]
+10:11:47 INFO  [ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=606955]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [dataSource.bmmsjndi,BMMS.propertyConfigurer,BMMS.dataSource,BMMS.baseDao,BMMS.sqlMapClient,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler]; root of BeanFactory hierarchy
+10:11:47 INFO  [ClassPathXmlApplicationContext] 41 beans defined in application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=606955]
+10:11:47 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [dataSource.bmmsjndi,BMMS.propertyConfigurer,BMMS.dataSource,BMMS.baseDao,BMMS.sqlMapClient,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler]; root of BeanFactory hierarchy]
+10:11:47 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSE-Web-CFG/GTSE-Web-root-applicationcontext.xml]
+10:11:47 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admin-CFG/admin-root-applicationcontext.xml]
+10:11:47 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BPC3-CFG/BPC3-root-applicationcontext.xml]
+10:11:47 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSA-Web-CFG/GTSA-Web-root-applicationcontext.xml]
+10:11:47 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admp-CFG/admp-root-applicationcontext.xml]
+10:11:47 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSK-Web-CFG/GTSK-Web-root-applicationcontext.xml]
+10:11:47 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/AIMS-CFG/AIMS-root-applicationcontext.xml]
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/AIMS-CFG/AIMS-orm-mapping.xml]
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-root-applicationcontext.xml]
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-orm-mapping.xml]
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-root-applicationcontext.xml]
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-applicationcontext.xml]
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-mapping.xml]
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-webcontext.xml]
+10:11:48 INFO  [Environment] Hibernate 3.1.3
+10:11:48 INFO  [Environment] hibernate.properties not found
+10:11:48 INFO  [Environment] using CGLIB reflection optimizer
+10:11:48 INFO  [Environment] using JDK 1.4 java.sql.Timestamp handling
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSB-CFG/GTSB-root-applicationcontext.xml]
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/FTS-CFG/FTS-root-applicationcontext.xml]
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSC-Web-CFG/GTSC-Web-root-applicationcontext.xml]
+10:11:48 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [waf-framework/waf-applicationcontext.xml]
+10:11:48 INFO  [XmlWebApplicationContext] Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [GTSE-Web.propertyConfigurer,GTSE-Web.actionRegister,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,BPC3.propertyConfigurer,BPC3.smpSqlMapClient,sqlMapClientTemplate,BPC3.locator,com.nstc.bpc3.ajax.PublicActionRegister,bankOrderService,bankOrderDao,GTSA-Web.propertyConfigurer,GTSA-Web.actionRegister,admp.smpSqlMapClient,baseDataDAO,baseDataService,GTSK-Web.propertyConfigurer,GTSK-Web.smpSqlMapClient,GTSK-Web.gtskEventServer,AIMS.propertyConfigurer,AIMS.smpSqlMapClient,AIMS.rootDao,AIMS.daoFacade,AIMS.associateBankDao,AIMS.commonDao,AIMS.accountUsageDao,AIMS.brokerDao,AIMS.accountTypeDao,AIMS.accountNatureDao,AIMS.astBankLogDao,AIMS.accountApplyDao,AIMS.acntInspectionDao,AIMS.accountInfoDao,AIMS.dwmDao,AIMS.inDirectAcntDao,AIMS.cancelAccountDao,AIMS.accountUpdateDao,AIMS.accountSyncDao,AIMS.accountBalanceDao,AIMS.bankDetailDao,AIMS.baseServer,AIMS.locator,AIMS.commonService,AIMS.accountUsageService,AIMS.accountTypeService,AIMS.accountNatureService,AIMS.brokerService,AIMS.associateBankService,AIMS.astBankLogService,AIMS.accountApplyService,AIMS.bizFlowService,AIMS.acntInspectionService,AIMS.accountInfoService,AIMS.dwmService,AIMS.inDirectAcntService,AIMS.cancelAccountService,AIMS.accountUpdateService,AIMS.accountSyncService,AIMS.accountBalanceService,AIMS.bankDetailService,AIMS.saveAccountAssociateflagService,AIMS.bp3CallBackService,AIMS.gtsaConnectService,AIMS.remoteServer,AIMS.RemoteService,AIMS.autoTask,AIMS.autoTaskJob,AIMS.autoTaskJobTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,AIMS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources#1,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,CRM.propertyConfigurer,com.nstc.waf.spring.Resources#2,CRM.locator,CRM.baseServer,CRM.commonServer,CRM.cltConfInfoServer,CRM.validateServer,CRM.cltBlackListServer,CRM.cltStkshareServer,CRM.cltStockServer,CRM.cltFileServer,CRM.cltCltInfoServer,CRM.cltCltAccountsServer,CRM.cltCltAccountsTblServer,CRM.reginoServer,CRM.userGroupServer,CRM.userGroupInfoServer,CRM.imageDataQuoteSetServer,CRM.cltProfileServer,CRM.cltInfoAttrServer,CRM.cltSubTypeServer,CRM.cltTypeServer,CRM.cltTypeFieldServer,CRM.cltConfInfoQuoteServer,CRM.cltBaseInfoManageServer,CRM.cltBaseInfoApproveServer,CRM.cltMemberTypeServer,CRM.remoteSmsServer,CRM.cltCorresspondentServer,CRM.cltManageInfoServer,CRM.daoFacade,CRM.baseDao,CRM.commonDao,CRM.cltConfInfoDao,CRM.cltBlackListDao,CRM.cltStkshareDao,CRM.cltStockDao,CRM.cltFileDao,CRM.cltCltInfoDao,CRM.cltCltAccountsDao,CRM.cltCltAccountsTblDao,CRM.reginoDao,CRM.userGroupDao,CRM.userGroupInfoDao,CRM.imageDataQuoteSetDao,CRM.cltInfoAttrDao,CRM.cltSubTypeDao,CRM.cltTypeDao,CRM.cltTypeFieldDao,CRM.cltConfInfoQuoteDao,CRM.cltBaseInfoManageDao,CRM.cltBaseInfoApproveDao,CRM.cltMemberTypeDao,CRM.cltCorresspondentDao,CRM.cltManageInfoDao,CRM.baseTxProxy,CRM.SmsMainService,CRM.webHandlerFactoryBySpringCreator,CRM.abstractWebHandler,CRM.webHanderBpRegion,CRM.getKeyInfoWebHandler,CRM.commonExtWebAction,CRM.webHandler0101XZQH,CRM.testHandler,CRM.downloadHandler,CRM.webHandler0101,CRM.webHandler0101Save,CRM.webHandler0101Remove,CRM.webHandler0105Upload,CRM.webHandler0108,CRM.webHandler0108Save,CRM.webHandler0108Remove,CRM.webHandler0201,CRM.webHandler0201_1,CRM.webHandler0201Save,CRM.webHandler0201Save_1,CRM.webHandler0201Remove,CRM.webHandler0201Remove_1,CRM.webHandler020101,CRM.webHandler020101_1,CRM.webHandler020102,CRM.webHandler020102_1,CRM.webHandler020102Save,CRM.webHandler020102Save_1,CRM.webHandler020102Remove,CRM.webHandler020102Remove_1,CRM.webHandler0202,CRM.webHandler0202Save,CRM.webHandler0202Remove,CRM.webHandler0203,CRM.webHandler0203Save,CRM.webHandler0203Remove,CRM.webHandler020301,CRM.webHandler020301Save,CRM.webHandler020301Remove,CRM.webHandler020302,CRM.webHandler020302Save,CRM.webHandler020302Remove,CRM.webHandler0204,CRM.webHandler0204Upload,CRM.webHandler020401,CRM.webHandler020401Remove,CRM.webHandler020402,CRM.webHandler0205,CRM.webHandler0205Save,CRM.webHandler0205Remove,CRM.webHandler0206,CRM.webHandler0206Save,CRM.webHandler0206Remove,CRM.webHandler0207,CRM.webHandler0207Upload,CRM.webHandler020701,CRM.webHandler020703,CRM.webHandler020704,CRM.webHandler020701Remove,CRM.webHandler020702,CRM.webHandler0301,CRM.webHandler0301_1,CRM.webHandler030101,CRM.webHandler030102,CRM.webHandler030103,CRM.webHandler030104,CRM.webHandler03010401,CRM.webHandler03010402,CRM.webHandler03010403,CRM.webHandler03010404,CRM.webHandler030105,CRM.webHandler030106,CRM.webHandler030107,CRM.webHandler0303,CRM.webHandler0303_1,CRM.webHandler030301,CRM.webHandler0603,CRM.webHandler0604,CRM.webHandler0605,CRM.webHandler0606,CRM.webHandler9903,CRM.webHandler9903_1,CRM.webHandler9904,CRM.webHandler9905,CRM.webHandler0401,CRM.webHandler0401_1,CRM.webHandler040101,CRM.webHandler04010101,CRM.webHandler04010102,CRM.webHandler04010103,CRM.webHandler04010104,CRM.webHandler04010105,CRM.webHandler04010106,GTSB.propertyConfigurer,GTSB.smpSqlMapClient,GTSB.GTSBSpringBeanFactory,GTSB.gtsbEventServer,FTS.propertyConfigurer,FTS.smpSqlMapClient,FTS.FTSpringBeanFactory,FTS.ftsEventServer,GTSC-Web.propertyConfigurer,GTSC-Web.smpSqlMapClient,GTSC-Web.gtscEventServer,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient]; root of BeanFactory hierarchy
+10:11:48 INFO  [XmlWebApplicationContext] 272 beans defined in application context [Root WebApplicationContext]
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.DbBizCase -> BizCase
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizHistory -> BizHistory
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizRight -> BizRight
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizCaseDispatchHistoryView -> VW_DispatchHistory
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.NsClient -> NsClient
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.WfUser -> BizWfUser
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizAgency -> BIZ_AGENCY
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcessing -> BIZPROCESSING
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcRight -> BizProcRight
+10:11:48 INFO  [PropertyPlaceholderConfigurer] Loading properties file from class path resource [CRM-CFG/crm-applicationcontext.properties]
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizActionType -> BIZ_ACTION_TYPE
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlow -> BIZ_FLOW
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTask -> BIZ_TASKS
+10:11:48 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizAllocs -> BIZ_ALLOCS
+10:11:48 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizActions -> BIZ_TASK_ACTION
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAllocation -> BIZ_ALLOCATIONS
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizResourceRule -> BIZ_RESOURCE_RULES
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizCondition -> BIZ_CONDITION
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizRuleType -> BIZ_RULE_TYPE
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAction -> BIZ_ACTION
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskType -> BIZ_TASK_TYPE
+10:11:48 INFO  [DefaultAopProxyFactory] CGLIB2 available: proxyTargetClass feature enabled
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlowType -> BIZ_FLOW_TYPE
+10:11:48 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizReject -> BIZ_REJECTS
+10:11:48 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskAction -> BIZ_TASK_ACTION
+10:11:48 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskBusinessType -> BIZ_TASK_BUSINESS_TYPE
+10:11:48 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizFlow.bizTasks -> BIZ_TASKS
+10:11:48 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizConditions -> BIZ_CONDITION
+10:11:48 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizRejects -> BIZ_REJECTS
+10:11:48 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [GTSE-Web.propertyConfigurer,GTSE-Web.actionRegister,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,BPC3.propertyConfigurer,BPC3.smpSqlMapClient,sqlMapClientTemplate,BPC3.locator,com.nstc.bpc3.ajax.PublicActionRegister,bankOrderService,bankOrderDao,GTSA-Web.propertyConfigurer,GTSA-Web.actionRegister,admp.smpSqlMapClient,baseDataDAO,baseDataService,GTSK-Web.propertyConfigurer,GTSK-Web.smpSqlMapClient,GTSK-Web.gtskEventServer,AIMS.propertyConfigurer,AIMS.smpSqlMapClient,AIMS.rootDao,AIMS.daoFacade,AIMS.associateBankDao,AIMS.commonDao,AIMS.accountUsageDao,AIMS.brokerDao,AIMS.accountTypeDao,AIMS.accountNatureDao,AIMS.astBankLogDao,AIMS.accountApplyDao,AIMS.acntInspectionDao,AIMS.accountInfoDao,AIMS.dwmDao,AIMS.inDirectAcntDao,AIMS.cancelAccountDao,AIMS.accountUpdateDao,AIMS.accountSyncDao,AIMS.accountBalanceDao,AIMS.bankDetailDao,AIMS.baseServer,AIMS.locator,AIMS.commonService,AIMS.accountUsageService,AIMS.accountTypeService,AIMS.accountNatureService,AIMS.brokerService,AIMS.associateBankService,AIMS.astBankLogService,AIMS.accountApplyService,AIMS.bizFlowService,AIMS.acntInspectionService,AIMS.accountInfoService,AIMS.dwmService,AIMS.inDirectAcntService,AIMS.cancelAccountService,AIMS.accountUpdateService,AIMS.accountSyncService,AIMS.accountBalanceService,AIMS.bankDetailService,AIMS.saveAccountAssociateflagService,AIMS.bp3CallBackService,AIMS.gtsaConnectService,AIMS.remoteServer,AIMS.RemoteService,AIMS.autoTask,AIMS.autoTaskJob,AIMS.autoTaskJobTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,AIMS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources#1,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,CRM.propertyConfigurer,com.nstc.waf.spring.Resources#2,CRM.locator,CRM.baseServer,CRM.commonServer,CRM.cltConfInfoServer,CRM.validateServer,CRM.cltBlackListServer,CRM.cltStkshareServer,CRM.cltStockServer,CRM.cltFileServer,CRM.cltCltInfoServer,CRM.cltCltAccountsServer,CRM.cltCltAccountsTblServer,CRM.reginoServer,CRM.userGroupServer,CRM.userGroupInfoServer,CRM.imageDataQuoteSetServer,CRM.cltProfileServer,CRM.cltInfoAttrServer,CRM.cltSubTypeServer,CRM.cltTypeServer,CRM.cltTypeFieldServer,CRM.cltConfInfoQuoteServer,CRM.cltBaseInfoManageServer,CRM.cltBaseInfoApproveServer,CRM.cltMemberTypeServer,CRM.remoteSmsServer,CRM.cltCorresspondentServer,CRM.cltManageInfoServer,CRM.daoFacade,CRM.baseDao,CRM.commonDao,CRM.cltConfInfoDao,CRM.cltBlackListDao,CRM.cltStkshareDao,CRM.cltStockDao,CRM.cltFileDao,CRM.cltCltInfoDao,CRM.cltCltAccountsDao,CRM.cltCltAccountsTblDao,CRM.reginoDao,CRM.userGroupDao,CRM.userGroupInfoDao,CRM.imageDataQuoteSetDao,CRM.cltInfoAttrDao,CRM.cltSubTypeDao,CRM.cltTypeDao,CRM.cltTypeFieldDao,CRM.cltConfInfoQuoteDao,CRM.cltBaseInfoManageDao,CRM.cltBaseInfoApproveDao,CRM.cltMemberTypeDao,CRM.cltCorresspondentDao,CRM.cltManageInfoDao,CRM.baseTxProxy,CRM.SmsMainService,CRM.webHandlerFactoryBySpringCreator,CRM.abstractWebHandler,CRM.webHanderBpRegion,CRM.getKeyInfoWebHandler,CRM.commonExtWebAction,CRM.webHandler0101XZQH,CRM.testHandler,CRM.downloadHandler,CRM.webHandler0101,CRM.webHandler0101Save,CRM.webHandler0101Remove,CRM.webHandler0105Upload,CRM.webHandler0108,CRM.webHandler0108Save,CRM.webHandler0108Remove,CRM.webHandler0201,CRM.webHandler0201_1,CRM.webHandler0201Save,CRM.webHandler0201Save_1,CRM.webHandler0201Remove,CRM.webHandler0201Remove_1,CRM.webHandler020101,CRM.webHandler020101_1,CRM.webHandler020102,CRM.webHandler020102_1,CRM.webHandler020102Save,CRM.webHandler020102Save_1,CRM.webHandler020102Remove,CRM.webHandler020102Remove_1,CRM.webHandler0202,CRM.webHandler0202Save,CRM.webHandler0202Remove,CRM.webHandler0203,CRM.webHandler0203Save,CRM.webHandler0203Remove,CRM.webHandler020301,CRM.webHandler020301Save,CRM.webHandler020301Remove,CRM.webHandler020302,CRM.webHandler020302Save,CRM.webHandler020302Remove,CRM.webHandler0204,CRM.webHandler0204Upload,CRM.webHandler020401,CRM.webHandler020401Remove,CRM.webHandler020402,CRM.webHandler0205,CRM.webHandler0205Save,CRM.webHandler0205Remove,CRM.webHandler0206,CRM.webHandler0206Save,CRM.webHandler0206Remove,CRM.webHandler0207,CRM.webHandler0207Upload,CRM.webHandler020701,CRM.webHandler020703,CRM.webHandler020704,CRM.webHandler020701Remove,CRM.webHandler020702,CRM.webHandler0301,CRM.webHandler0301_1,CRM.webHandler030101,CRM.webHandler030102,CRM.webHandler030103,CRM.webHandler030104,CRM.webHandler03010401,CRM.webHandler03010402,CRM.webHandler03010403,CRM.webHandler03010404,CRM.webHandler030105,CRM.webHandler030106,CRM.webHandler030107,CRM.webHandler0303,CRM.webHandler0303_1,CRM.webHandler030301,CRM.webHandler0603,CRM.webHandler0604,CRM.webHandler0605,CRM.webHandler0606,CRM.webHandler9903,CRM.webHandler9903_1,CRM.webHandler9904,CRM.webHandler9905,CRM.webHandler0401,CRM.webHandler0401_1,CRM.webHandler040101,CRM.webHandler04010101,CRM.webHandler04010102,CRM.webHandler04010103,CRM.webHandler04010104,CRM.webHandler04010105,CRM.webHandler04010106,GTSB.propertyConfigurer,GTSB.smpSqlMapClient,GTSB.GTSBSpringBeanFactory,GTSB.gtsbEventServer,FTS.propertyConfigurer,FTS.smpSqlMapClient,FTS.FTSpringBeanFactory,FTS.ftsEventServer,GTSC-Web.propertyConfigurer,GTSC-Web.smpSqlMapClient,GTSC-Web.gtscEventServer,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient]; root of BeanFactory hierarchy]
+10:11:48 WARN  [RootClass] composite-id class does not override equals(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+10:11:48 WARN  [RootClass] composite-id class does not override hashCode(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+10:11:48 INFO  [ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+10:11:48 INFO  [SettingsFactory] RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+10:11:48 INFO  [SettingsFactory] JDBC driver: Oracle JDBC driver, version: 12.1.0.1.0
+10:11:48 INFO  [Dialect] Using dialect: org.hibernate.dialect.OracleDialect
+10:11:48 INFO  [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+10:11:48 INFO  [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+10:11:48 INFO  [SettingsFactory] Automatic flush during beforeCompletion(): enabled
+10:11:48 INFO  [SettingsFactory] Automatic session close at end of transaction: disabled
+10:11:48 INFO  [SettingsFactory] JDBC batch size: 15
+10:11:48 INFO  [SettingsFactory] JDBC batch updates for versioned data: disabled
+10:11:48 INFO  [SettingsFactory] Scrollable result sets: enabled
+10:11:48 INFO  [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+10:11:48 INFO  [SettingsFactory] Connection release mode: on_close
+10:11:48 INFO  [SettingsFactory] Maximum outer join fetch depth: 3
+10:11:48 INFO  [SettingsFactory] Default batch fetch size: 8
+10:11:49 INFO  [SettingsFactory] Generate SQL with comments: disabled
+10:11:49 INFO  [SettingsFactory] Order SQL updates by primary key: enabled
+10:11:49 INFO  [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+10:11:49 INFO  [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+10:11:49 INFO  [SettingsFactory] Query language substitutions: {}
+10:11:49 INFO  [SettingsFactory] Second-level cache: enabled
+10:11:49 INFO  [SettingsFactory] Query cache: enabled
+10:11:49 INFO  [SettingsFactory] Cache provider: org.hibernate.cache.EhCacheProvider
+10:11:49 INFO  [SettingsFactory] Optimize cache for minimal puts: disabled
+10:11:49 INFO  [SettingsFactory] Structured second-level cache entries: disabled
+10:11:49 INFO  [SettingsFactory] Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+10:11:49 INFO  [SettingsFactory] Statistics: disabled
+10:11:49 INFO  [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+10:11:49 INFO  [SettingsFactory] Default entity-mode: pojo
+10:11:49 INFO  [SessionFactoryImpl] building session factory
+10:11:49 WARN  [ConfigurationFactory] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+10:11:49 INFO  [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+10:11:49 INFO  [UpdateTimestampsCache] starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+10:11:49 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+10:11:49 INFO  [Environment] Hibernate 3.1.3
+10:11:49 INFO  [StandardQueryCache] starting query cache at region: org.hibernate.cache.StandardQueryCache
+10:11:49 INFO  [Environment] hibernate.properties not found
+10:11:49 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+10:11:49 INFO  [Environment] using CGLIB reflection optimizer
+10:11:49 INFO  [Environment] using JDK 1.4 java.sql.Timestamp handling
+10:11:49 INFO  [HibernateTransactionManager] Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@3d685f] of Hibernate SessionFactory for HibernateTransactionManager
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.DbBizCase -> BizCase
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizHistory -> BizHistory
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizRight -> BizRight
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizCaseDispatchHistoryView -> VW_DispatchHistory
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.NsClient -> NsClient
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.WfUser -> BizWfUser
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizAgency -> BIZ_AGENCY
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcessing -> BIZPROCESSING
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcRight -> BizProcRight
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizActionType -> BIZ_ACTION_TYPE
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlow -> BIZ_FLOW
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTask -> BIZ_TASKS
+10:11:49 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizAllocs -> BIZ_ALLOCS
+10:11:49 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizActions -> BIZ_TASK_ACTION
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAllocation -> BIZ_ALLOCATIONS
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizResourceRule -> BIZ_RESOURCE_RULES
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizCondition -> BIZ_CONDITION
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizRuleType -> BIZ_RULE_TYPE
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAction -> BIZ_ACTION
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskType -> BIZ_TASK_TYPE
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlowType -> BIZ_FLOW_TYPE
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizReject -> BIZ_REJECTS
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskAction -> BIZ_TASK_ACTION
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskBusinessType -> BIZ_TASK_BUSINESS_TYPE
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltBlackList -> CLT_BLACK_LIST
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltInfo -> CLT_CLT_INFO
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltConfInfo -> CLT_CONF_INFO
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltContact -> CLT_CONTACT
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltContribute -> CLT_CONTRIBUTE
+10:11:49 INFO  [CacheManager] Creating new CacheManager singleton
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCorresspondent -> CLT_CORRESSPONDENT
+10:11:49 WARN  [CacheManager] Could not load /whirlycache.xml file. Falling back to defaults.
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltFile -> CLT_FILE
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltFileLog -> CLT_FILE_LOG
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltParner -> CLT_PARNER
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltSpEvent -> CLT_SP_EVENT
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltSpModify -> CLT_SP_MODIFY
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltStkshare -> CLT_STKSHARE
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltStock -> CLT_STOCK
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltInfoTbl -> CLT_CLT_INFO_TBL
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.Wfuser -> WFUSER
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.Region -> CLT_REGION
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltAccounts -> CLT_CLT_ACCOUNTS
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltAccountsTbl -> CLT_CLT_ACCOUNTSTBL
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltConfInfoValue -> CLT_CONF_INFO_VALUE
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.BpBank -> BP_BANK
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.ElRegion -> EL_REGION
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.Cnaps -> CNAPS
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CnapsBank -> CNAPS_BANK
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltUserGroupInfo -> CLT_USER_GROUP_INFO
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltImageDataQuote -> CLT_IMAGE_DATA_QUOTE
+10:11:49 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltConfInfoValueTbl -> CLT_CONF_INFO_VALUE_TBL
+10:11:49 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizFlow.bizTasks -> BIZ_TASKS
+10:11:49 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizConditions -> BIZ_CONDITION
+10:11:49 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizRejects -> BIZ_REJECTS
+10:11:49 INFO  [HbmBinder] Mapping collection: com.nstc.crm.domain.CltConfInfo.cltCltInfosForCreditlevel -> CLT_CLT_INFO
+10:11:49 INFO  [HbmBinder] Mapping collection: com.nstc.crm.domain.CltConfInfo.cltCltInfosForCreditrating -> CLT_CLT_INFO
+10:11:49 INFO  [HbmBinder] Mapping collection: com.nstc.crm.domain.CltConfInfo.cltCltInfosForIndustry -> CLT_CLT_INFO
+10:11:49 INFO  [ContextLoader] Using context class [org.springframework.web.context.support.XmlWebApplicationContext] for root WebApplicationContext
+10:11:49 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 4276 ms
+10:11:49 WARN  [RootClass] composite-id class does not override equals(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+10:11:49 WARN  [RootClass] composite-id class does not override hashCode(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+10:11:50 INFO  [ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+10:11:50 INFO  [SettingsFactory] RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+10:11:50 INFO  [SettingsFactory] JDBC driver: Oracle JDBC driver, version: 12.1.0.1.0
+10:11:50 INFO  [Dialect] Using dialect: org.hibernate.dialect.OracleDialect
+10:11:50 INFO  [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+10:11:50 INFO  [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+10:11:50 INFO  [SettingsFactory] Automatic flush during beforeCompletion(): enabled
+10:11:50 INFO  [SettingsFactory] Automatic session close at end of transaction: disabled
+10:11:50 INFO  [SettingsFactory] JDBC batch size: 15
+10:11:50 INFO  [SettingsFactory] JDBC batch updates for versioned data: disabled
+10:11:50 INFO  [SettingsFactory] Scrollable result sets: enabled
+10:11:50 INFO  [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+10:11:50 INFO  [SettingsFactory] Connection release mode: on_close
+10:11:50 INFO  [SettingsFactory] Maximum outer join fetch depth: 3
+10:11:50 INFO  [SettingsFactory] Default batch fetch size: 8
+10:11:50 INFO  [SettingsFactory] Generate SQL with comments: disabled
+10:11:50 INFO  [SettingsFactory] Order SQL updates by primary key: enabled
+10:11:50 INFO  [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+10:11:50 INFO  [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+10:11:50 INFO  [SettingsFactory] Query language substitutions: {}
+10:11:50 INFO  [SettingsFactory] Second-level cache: enabled
+10:11:50 INFO  [SettingsFactory] Query cache: enabled
+10:11:50 INFO  [SettingsFactory] Cache provider: org.hibernate.cache.EhCacheProvider
+10:11:50 INFO  [SettingsFactory] Optimize cache for minimal puts: disabled
+10:11:50 INFO  [SettingsFactory] Structured second-level cache entries: disabled
+10:11:50 INFO  [SettingsFactory] Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+10:11:50 INFO  [SettingsFactory] Statistics: disabled
+10:11:50 INFO  [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+10:11:50 INFO  [SettingsFactory] Default entity-mode: pojo
+10:11:50 INFO  [SessionFactoryImpl] building session factory
+10:11:50 WARN  [ConfigurationFactory] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/n9_servers/sms_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+10:11:50 INFO  [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+10:11:50 INFO  [UpdateTimestampsCache] starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+10:11:50 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+10:11:50 INFO  [StandardQueryCache] starting query cache at region: org.hibernate.cache.StandardQueryCache
+10:11:50 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+10:11:50 INFO  [HibernateTransactionManager] Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@b8d335] of Hibernate SessionFactory for HibernateTransactionManager
+10:11:51 INFO  [SimpleThreadPool] Job execution threads will use class loader of thread: main
+10:11:51 INFO  [QuartzScheduler] Quartz Scheduler v.1.5.1 created.
+10:11:51 INFO  [RAMJobStore] RAMJobStore initialized.
+10:11:51 INFO  [StdSchedulerFactory] Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+10:11:51 INFO  [StdSchedulerFactory] Quartz scheduler version: 1.5.1
+10:11:51 INFO  [SchedulerFactoryBean] Starting Quartz scheduler now
+10:11:51 INFO  [QuartzScheduler] Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:11:51 INFO  [CacheManager] Creating new CacheManager singleton
+10:11:51 WARN  [CacheManager] Could not load /whirlycache.xml file. Falling back to defaults.
+10:11:51 INFO  [ContextLoader] Using context class [org.springframework.web.context.support.XmlWebApplicationContext] for root WebApplicationContext
+10:11:51 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 4453 ms
+10:12:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:12:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:12:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:12:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:13:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:13:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:13:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:13:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:14:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:14:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:14:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:14:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:15:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:15:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:15:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:15:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:16:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:16:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:16:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:16:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:17:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:17:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:17:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:17:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:18:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:18:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:18:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:18:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:19:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:19:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:19:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:19:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:20:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:20:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:20:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:20:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:21:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:21:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:21:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:21:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:22:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:22:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:22:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:22:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:23:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:23:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:23:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:23:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:24:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:24:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:24:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:24:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:25:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:25:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:25:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:25:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:26:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:26:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:26:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:26:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:27:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:27:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:27:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:27:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:28:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:28:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:28:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:28:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:29:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:29:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:29:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:29:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:30:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:30:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:30:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:30:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:31:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:31:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:31:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:31:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:32:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:32:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:32:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:32:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:33:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:33:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:33:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:33:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:34:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:34:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:34:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:34:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:35:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:35:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:35:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:35:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:36:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:36:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:36:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:36:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:37:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:37:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:37:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:37:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:38:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:38:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:38:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:38:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:39:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:39:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:39:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:39:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:40:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:40:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:40:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:40:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:41:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:41:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:41:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:41:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:42:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:42:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:42:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:42:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:43:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:43:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:43:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:43:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:44:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:44:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:44:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:44:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:45:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:45:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:45:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:45:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:46:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:46:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:46:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:46:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:47:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:47:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:47:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:47:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:48:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:48:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:48:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:48:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:49:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:49:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:49:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:49:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:50:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:50:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:50:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:50:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:51:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:51:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:51:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:51:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:52:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:52:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:52:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:52:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:53:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:53:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:53:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:53:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:54:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:54:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:54:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:54:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:55:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:55:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:55:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:55:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:56:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:56:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:56:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:56:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:57:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:57:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:57:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:57:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:58:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:58:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:58:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:58:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:59:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:59:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:59:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+10:59:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:00:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:00:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:00:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:00:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:01:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:01:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:01:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:01:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:02:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:02:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:02:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:02:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:03:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:03:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:03:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:03:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:04:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:04:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:04:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:04:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:05:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:05:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:05:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:05:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:06:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:06:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:06:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:06:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:07:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:07:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:07:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:07:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:08:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:08:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:08:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:08:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:09:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:09:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:09:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:09:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:10:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:10:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:10:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:10:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:11:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:11:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:11:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:11:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:12:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:12:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:12:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:12:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:13:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:13:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:13:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:13:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:14:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:14:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:14:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:14:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:15:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:15:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:15:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:15:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:16:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:16:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:16:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:16:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:17:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:17:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:17:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:17:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:18:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:18:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:18:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:18:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:19:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:19:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:19:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:19:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:20:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:20:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:20:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:20:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:21:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:21:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:21:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:21:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:22:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:22:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:22:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:22:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:23:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:23:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:23:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:23:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:24:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:24:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:24:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:24:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:25:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:25:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:25:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:25:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:26:19 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:26:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:26:49 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:26:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:33:15 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+11:33:15 INFO  [CollectionFactory] JDK 1.4+ collections available
+11:33:15 INFO  [CollectionFactory] Commons Collections 3.x available
+11:33:15 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GDPS-CFG/GDPS-root-applicationcontext.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GDPS-CFG/GDPS-remote-config.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/OCS-Web-CFG/OCS-Web-root-applicationcontext.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-root-applicationcontext.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-orm-mapping.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BMMS-CFG/bmms-root-applicationcontext.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BMMS-CFG/bmms-common-config.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admin-CFG/admin-root-applicationcontext.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/SDM-Web-CFG/SDM-Web-root-applicationcontext.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTCP-CFG/GTCP-root-applicationcontext.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTCP-CFG/GTCP-orm-mapping.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admp-CFG/admp-root-applicationcontext.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [waf-framework/waf-applicationcontext.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from URL [jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/SmartPage-1.4.3.3.jar!/server/smp-httpclient-config.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from URL [jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/SmartPage-1.4.3.3.jar!/server/smp-root-applicationcontext.xml]
+11:33:16 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from URL [jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/SmartPage-1.4.3.3.jar!/server/smp-orm-mapping.xml]
+11:33:16 INFO  [XmlWebApplicationContext] Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [BILL.propertyConfigurer,GDPS.locator,BILL.dataSource,GDPS.smpSqlMapClient,BILL.txService,BILL.caseHandler,BILL.billTxProcess,BILL.GDPSAllocation,BILL.txHandlerFac,BILL.txHandlerSupport,BILL.commonTxHandler,BILL.castBmmsTxHandler,BILL.registTxHandler,BILL.outOfWarehouseTxHandler,BILL.savePayeeConfigTxHandler,BILL.limitOutTxHandler,BILL.limitCommonTxHandler,BILL.txHandler_T106,BILL.txHandler_T116,BILL.txHandler_T120,BILL.txHandler_T101,BILL.txHandler_T107,BILL.txHandler_T117,BILL.txHandler_T105,BILL.txHandler_T115,BILL.txHandler_T201,BILL.txHandler_T202,BILL.txHandler_T203,BILL.txHandler_T204,BILL.txHandler_T205,BILL.txHandler_T108,BILL.txHandler_T123,BILL.txHandler_T113,BILL.txHandler_T124,BILL.txHandler_T139,BILL.txHandler_T137,BILL.txHandler_T138,BILL.txHandler_T119,BILL.txHandler_T121,BILL.txHandler_T111,BILL.txHandler_T122,BILL.txHandler_T104,BILL.txHandler_T114,BILL.txHandler_T102,BILL.txHandler_T109,BILL.txHandler_T103,BILL.txHandler_T110,BILL.txHandler_T126,BILL.txHandler_T112,BILL.txHandler_T125,BILL.txHandler_T127,BILL.txHandler_T128,BILL.txHandler_T129,BILL.txHandler_T130,BILL.txHandler_T131,BILL.txHandler_T132,BILL.txHandler_T133,BILL.txHandler_T134,BILL.txHandler_T136,BILL.txHandler_T206,BILL.txHandler_T301,BILL.txServer,BILL.txLogServer,BILL.ledgerServer,BILL.billServer,GDPS.gdpsBaseConfigServer,BILL.memberServer,BILL.wareHouseServer,BILL.bankAccountServer,BILL.actFunServer,BILL.bankBizTypeServer,BILL.bankServer,BILL.billTxFlowServer,BILL.baseDao,BILL.txDao,BILL.outletDao,BILL.txBillDao,BILL.txLogDao,BILL.ledgerDao,BILL.billDao,GDPS.billPayeeAccountDao,GDPS.billPayeeConfigDao,BILL.memberDao,BILL.billWareHouseDao,BILL.bankAccountDao,BILL.bankBizTypeDao,BILL.bankDao,BILL.sysParamDao,BILL.billTxFlowDao,GDPS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,GDPS.excelParser,GDPS.validateExcel,GDPS.validateCommon,GDPS.validateT101,GDPS.validateT105,GDPS.validateT115,GDPS.validateT201,GDPS.validateT202,GDPS.validateT206,GDPS.validateT305,GDPS.budgetHelper,GDPS.budgetService,GDPS.txterm,GDPS.bcode,GDPS.firm,GDPS.budgetTermValidator,GDPS.quota,GDPS.validatorFactory,BILL.sysConfig,framework.springBeanFactory,GDPS.parserHelper,GDPS.castGDPSModelUtil,GDPS.urlMapping,GDPS.billBeanConverter,GDPS.BPService,GDPS.BPConnCallback,GDPS.connCallback.remoting,GDPS.DBMS.remoting,GDPS.remoteDbmsService,GDPS.gdpsService,GDPS.commonSysBizHandlerFactory,GDPS.default,GDPS.cfbserverhelper,GDPS.cfbEventServer,GDPS.bmsRemoteService,GDPS.ebdEventServer,GDPS.ebdServer,GDPS.ebdDataFactory,GDPS.defaultMapper_105,GDPS.defaultMapper_121,GDPS.defaultMapper_137,GDPS.defaultMapper_138,GDPS.gdpsRemoteService,GDPS.xerpEventServer,GDPS.cnapsService,GDPS.callBackService,GDPS.callBackFactory,GDPS.G6callBack,OCS-Web.propertyConfigurer,OCS-Web.ajaxActionRegister,OCS-Web.smpSqlMapClient,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,BMMS.propertyConfigurer,BMMS.baseDao,BMMS.smpSqlMapClient,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#2,BMMS.transactionInterceptor,BMMS.locator,BMMS.bmmsProcess,BMMS.businessService,BMMS.businessHandlerFactory,BMMS.busiHandler_change,BMMS.busiHandler_modifyDraft,BMMS.busiHandler_end,BMMS.busiHandler_disable,BMMS.busiHandler_out,BMMS.busiHandler_enterDraft,BMMS.busiHandler_changeDraft,BMMS.busiCommenHandler,BMMS.busiHandlerSupport,BMMS.parserHelper,BMMS.excelParser,BMMS.validateExcel,BMMS.validateCommon,BMMS.validateDraft,BMMS.validateCheck,BMMS.validateDlc,BMMS.validateIlc,BMMS.validateLg,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources#1,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,SDM-Web.propertyConfigurer,SDM-Web.actionRegister,GTCP.propertyConfigurer,GTCP.sqlMapClient,GTCP.rootDao,GTCP.daoFacade,GTCP.commonDao,GTCP.baseServer,GTCP.locator,GTCP.commonService,GTCP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#3,admp.smpSqlMapClient,baseDataDAO,baseDataService,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient,SMP.propertyConfigurer,SMP.httpInvokerRequestExecutor,SMP.httpclient,SMP.connectionManager,SMP.connectionManagerParams,SMP.locator,SMP.workButtonBusiness,SMP.uMHandleService,SMP.uMHandleDao,SMP.sqlMapClientTemplate,SMP.smpSqlMapClient,com.nstc.framework.core.Resources,SMP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#4]; root of BeanFactory hierarchy
+11:33:16 INFO  [XmlWebApplicationContext] 277 beans defined in application context [Root WebApplicationContext]
+11:33:17 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+11:33:17 INFO  [CollectionFactory] JDK 1.4+ collections available
+11:33:17 INFO  [CollectionFactory] Commons Collections 3.x available
+11:33:17 INFO  [PropertyPlaceholderConfigurer] Loading properties file from class path resource [smartform.properties]
+11:33:17 INFO  [PropertyPlaceholderConfigurer] Loading properties file from class path resource [common.properties]
+11:33:17 INFO  [DefaultAopProxyFactory] CGLIB2 available: proxyTargetClass feature enabled
+11:33:17 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:33:17 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:33:17 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#2' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:33:17 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#3' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:33:17 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#4' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:33:17 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [BILL.propertyConfigurer,GDPS.locator,BILL.dataSource,GDPS.smpSqlMapClient,BILL.txService,BILL.caseHandler,BILL.billTxProcess,BILL.GDPSAllocation,BILL.txHandlerFac,BILL.txHandlerSupport,BILL.commonTxHandler,BILL.castBmmsTxHandler,BILL.registTxHandler,BILL.outOfWarehouseTxHandler,BILL.savePayeeConfigTxHandler,BILL.limitOutTxHandler,BILL.limitCommonTxHandler,BILL.txHandler_T106,BILL.txHandler_T116,BILL.txHandler_T120,BILL.txHandler_T101,BILL.txHandler_T107,BILL.txHandler_T117,BILL.txHandler_T105,BILL.txHandler_T115,BILL.txHandler_T201,BILL.txHandler_T202,BILL.txHandler_T203,BILL.txHandler_T204,BILL.txHandler_T205,BILL.txHandler_T108,BILL.txHandler_T123,BILL.txHandler_T113,BILL.txHandler_T124,BILL.txHandler_T139,BILL.txHandler_T137,BILL.txHandler_T138,BILL.txHandler_T119,BILL.txHandler_T121,BILL.txHandler_T111,BILL.txHandler_T122,BILL.txHandler_T104,BILL.txHandler_T114,BILL.txHandler_T102,BILL.txHandler_T109,BILL.txHandler_T103,BILL.txHandler_T110,BILL.txHandler_T126,BILL.txHandler_T112,BILL.txHandler_T125,BILL.txHandler_T127,BILL.txHandler_T128,BILL.txHandler_T129,BILL.txHandler_T130,BILL.txHandler_T131,BILL.txHandler_T132,BILL.txHandler_T133,BILL.txHandler_T134,BILL.txHandler_T136,BILL.txHandler_T206,BILL.txHandler_T301,BILL.txServer,BILL.txLogServer,BILL.ledgerServer,BILL.billServer,GDPS.gdpsBaseConfigServer,BILL.memberServer,BILL.wareHouseServer,BILL.bankAccountServer,BILL.actFunServer,BILL.bankBizTypeServer,BILL.bankServer,BILL.billTxFlowServer,BILL.baseDao,BILL.txDao,BILL.outletDao,BILL.txBillDao,BILL.txLogDao,BILL.ledgerDao,BILL.billDao,GDPS.billPayeeAccountDao,GDPS.billPayeeConfigDao,BILL.memberDao,BILL.billWareHouseDao,BILL.bankAccountDao,BILL.bankBizTypeDao,BILL.bankDao,BILL.sysParamDao,BILL.billTxFlowDao,GDPS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,GDPS.excelParser,GDPS.validateExcel,GDPS.validateCommon,GDPS.validateT101,GDPS.validateT105,GDPS.validateT115,GDPS.validateT201,GDPS.validateT202,GDPS.validateT206,GDPS.validateT305,GDPS.budgetHelper,GDPS.budgetService,GDPS.txterm,GDPS.bcode,GDPS.firm,GDPS.budgetTermValidator,GDPS.quota,GDPS.validatorFactory,BILL.sysConfig,framework.springBeanFactory,GDPS.parserHelper,GDPS.castGDPSModelUtil,GDPS.urlMapping,GDPS.billBeanConverter,GDPS.BPService,GDPS.BPConnCallback,GDPS.connCallback.remoting,GDPS.DBMS.remoting,GDPS.remoteDbmsService,GDPS.gdpsService,GDPS.commonSysBizHandlerFactory,GDPS.default,GDPS.cfbserverhelper,GDPS.cfbEventServer,GDPS.bmsRemoteService,GDPS.ebdEventServer,GDPS.ebdServer,GDPS.ebdDataFactory,GDPS.defaultMapper_105,GDPS.defaultMapper_121,GDPS.defaultMapper_137,GDPS.defaultMapper_138,GDPS.gdpsRemoteService,GDPS.xerpEventServer,GDPS.cnapsService,GDPS.callBackService,GDPS.callBackFactory,GDPS.G6callBack,OCS-Web.propertyConfigurer,OCS-Web.ajaxActionRegister,OCS-Web.smpSqlMapClient,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,BMMS.propertyConfigurer,BMMS.baseDao,BMMS.smpSqlMapClient,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#2,BMMS.transactionInterceptor,BMMS.locator,BMMS.bmmsProcess,BMMS.businessService,BMMS.businessHandlerFactory,BMMS.busiHandler_change,BMMS.busiHandler_modifyDraft,BMMS.busiHandler_end,BMMS.busiHandler_disable,BMMS.busiHandler_out,BMMS.busiHandler_enterDraft,BMMS.busiHandler_changeDraft,BMMS.busiCommenHandler,BMMS.busiHandlerSupport,BMMS.parserHelper,BMMS.excelParser,BMMS.validateExcel,BMMS.validateCommon,BMMS.validateDraft,BMMS.validateCheck,BMMS.validateDlc,BMMS.validateIlc,BMMS.validateLg,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources#1,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,SDM-Web.propertyConfigurer,SDM-Web.actionRegister,GTCP.propertyConfigurer,GTCP.sqlMapClient,GTCP.rootDao,GTCP.daoFacade,GTCP.commonDao,GTCP.baseServer,GTCP.locator,GTCP.commonService,GTCP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#3,admp.smpSqlMapClient,baseDataDAO,baseDataService,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient,SMP.propertyConfigurer,SMP.httpInvokerRequestExecutor,SMP.httpclient,SMP.connectionManager,SMP.connectionManagerParams,SMP.locator,SMP.workButtonBusiness,SMP.uMHandleService,SMP.uMHandleDao,SMP.sqlMapClientTemplate,SMP.smpSqlMapClient,com.nstc.framework.core.Resources,SMP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#4]; root of BeanFactory hierarchy]
+11:33:17 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSE-Web-CFG/GTSE-Web-root-applicationcontext.xml]
+11:33:17 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [bmms-datasource.xml]
+11:33:17 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [bmms-service-context.xml]
+11:33:17 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [bmms-common-config.xml]
+11:33:17 INFO  [ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=21478439]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [dataSource.bmmsjndi,BMMS.propertyConfigurer,BMMS.dataSource,BMMS.baseDao,BMMS.sqlMapClient,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler]; root of BeanFactory hierarchy
+11:33:17 INFO  [ClassPathXmlApplicationContext] 41 beans defined in application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=21478439]
+11:33:17 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admin-CFG/admin-root-applicationcontext.xml]
+11:33:17 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [dataSource.bmmsjndi,BMMS.propertyConfigurer,BMMS.dataSource,BMMS.baseDao,BMMS.sqlMapClient,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler]; root of BeanFactory hierarchy]
+11:33:17 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BPC3-CFG/BPC3-root-applicationcontext.xml]
+11:33:17 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSA-Web-CFG/GTSA-Web-root-applicationcontext.xml]
+11:33:17 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admp-CFG/admp-root-applicationcontext.xml]
+11:33:17 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSK-Web-CFG/GTSK-Web-root-applicationcontext.xml]
+11:33:17 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/AIMS-CFG/AIMS-root-applicationcontext.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/AIMS-CFG/AIMS-orm-mapping.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-root-applicationcontext.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-orm-mapping.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-root-applicationcontext.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-applicationcontext.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-mapping.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-webcontext.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSB-CFG/GTSB-root-applicationcontext.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/FTS-CFG/FTS-root-applicationcontext.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSC-Web-CFG/GTSC-Web-root-applicationcontext.xml]
+11:33:18 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [waf-framework/waf-applicationcontext.xml]
+11:33:18 INFO  [XmlWebApplicationContext] Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [GTSE-Web.propertyConfigurer,GTSE-Web.actionRegister,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,BPC3.propertyConfigurer,BPC3.smpSqlMapClient,sqlMapClientTemplate,BPC3.locator,com.nstc.bpc3.ajax.PublicActionRegister,bankOrderService,bankOrderDao,GTSA-Web.propertyConfigurer,GTSA-Web.actionRegister,admp.smpSqlMapClient,baseDataDAO,baseDataService,GTSK-Web.propertyConfigurer,GTSK-Web.smpSqlMapClient,GTSK-Web.gtskEventServer,AIMS.propertyConfigurer,AIMS.smpSqlMapClient,AIMS.rootDao,AIMS.daoFacade,AIMS.associateBankDao,AIMS.commonDao,AIMS.accountUsageDao,AIMS.brokerDao,AIMS.accountTypeDao,AIMS.accountNatureDao,AIMS.astBankLogDao,AIMS.accountApplyDao,AIMS.acntInspectionDao,AIMS.accountInfoDao,AIMS.dwmDao,AIMS.inDirectAcntDao,AIMS.cancelAccountDao,AIMS.accountUpdateDao,AIMS.accountSyncDao,AIMS.accountBalanceDao,AIMS.bankDetailDao,AIMS.baseServer,AIMS.locator,AIMS.commonService,AIMS.accountUsageService,AIMS.accountTypeService,AIMS.accountNatureService,AIMS.brokerService,AIMS.associateBankService,AIMS.astBankLogService,AIMS.accountApplyService,AIMS.bizFlowService,AIMS.acntInspectionService,AIMS.accountInfoService,AIMS.dwmService,AIMS.inDirectAcntService,AIMS.cancelAccountService,AIMS.accountUpdateService,AIMS.accountSyncService,AIMS.accountBalanceService,AIMS.bankDetailService,AIMS.saveAccountAssociateflagService,AIMS.bp3CallBackService,AIMS.gtsaConnectService,AIMS.remoteServer,AIMS.RemoteService,AIMS.autoTask,AIMS.autoTaskJob,AIMS.autoTaskJobTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,AIMS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources#1,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,CRM.propertyConfigurer,com.nstc.waf.spring.Resources#2,CRM.locator,CRM.baseServer,CRM.commonServer,CRM.cltConfInfoServer,CRM.validateServer,CRM.cltBlackListServer,CRM.cltStkshareServer,CRM.cltStockServer,CRM.cltFileServer,CRM.cltCltInfoServer,CRM.cltCltAccountsServer,CRM.cltCltAccountsTblServer,CRM.reginoServer,CRM.userGroupServer,CRM.userGroupInfoServer,CRM.imageDataQuoteSetServer,CRM.cltProfileServer,CRM.cltInfoAttrServer,CRM.cltSubTypeServer,CRM.cltTypeServer,CRM.cltTypeFieldServer,CRM.cltConfInfoQuoteServer,CRM.cltBaseInfoManageServer,CRM.cltBaseInfoApproveServer,CRM.cltMemberTypeServer,CRM.remoteSmsServer,CRM.cltCorresspondentServer,CRM.cltManageInfoServer,CRM.daoFacade,CRM.baseDao,CRM.commonDao,CRM.cltConfInfoDao,CRM.cltBlackListDao,CRM.cltStkshareDao,CRM.cltStockDao,CRM.cltFileDao,CRM.cltCltInfoDao,CRM.cltCltAccountsDao,CRM.cltCltAccountsTblDao,CRM.reginoDao,CRM.userGroupDao,CRM.userGroupInfoDao,CRM.imageDataQuoteSetDao,CRM.cltInfoAttrDao,CRM.cltSubTypeDao,CRM.cltTypeDao,CRM.cltTypeFieldDao,CRM.cltConfInfoQuoteDao,CRM.cltBaseInfoManageDao,CRM.cltBaseInfoApproveDao,CRM.cltMemberTypeDao,CRM.cltCorresspondentDao,CRM.cltManageInfoDao,CRM.baseTxProxy,CRM.SmsMainService,CRM.webHandlerFactoryBySpringCreator,CRM.abstractWebHandler,CRM.webHanderBpRegion,CRM.getKeyInfoWebHandler,CRM.commonExtWebAction,CRM.webHandler0101XZQH,CRM.testHandler,CRM.downloadHandler,CRM.webHandler0101,CRM.webHandler0101Save,CRM.webHandler0101Remove,CRM.webHandler0105Upload,CRM.webHandler0108,CRM.webHandler0108Save,CRM.webHandler0108Remove,CRM.webHandler0201,CRM.webHandler0201_1,CRM.webHandler0201Save,CRM.webHandler0201Save_1,CRM.webHandler0201Remove,CRM.webHandler0201Remove_1,CRM.webHandler020101,CRM.webHandler020101_1,CRM.webHandler020102,CRM.webHandler020102_1,CRM.webHandler020102Save,CRM.webHandler020102Save_1,CRM.webHandler020102Remove,CRM.webHandler020102Remove_1,CRM.webHandler0202,CRM.webHandler0202Save,CRM.webHandler0202Remove,CRM.webHandler0203,CRM.webHandler0203Save,CRM.webHandler0203Remove,CRM.webHandler020301,CRM.webHandler020301Save,CRM.webHandler020301Remove,CRM.webHandler020302,CRM.webHandler020302Save,CRM.webHandler020302Remove,CRM.webHandler0204,CRM.webHandler0204Upload,CRM.webHandler020401,CRM.webHandler020401Remove,CRM.webHandler020402,CRM.webHandler0205,CRM.webHandler0205Save,CRM.webHandler0205Remove,CRM.webHandler0206,CRM.webHandler0206Save,CRM.webHandler0206Remove,CRM.webHandler0207,CRM.webHandler0207Upload,CRM.webHandler020701,CRM.webHandler020703,CRM.webHandler020704,CRM.webHandler020701Remove,CRM.webHandler020702,CRM.webHandler0301,CRM.webHandler0301_1,CRM.webHandler030101,CRM.webHandler030102,CRM.webHandler030103,CRM.webHandler030104,CRM.webHandler03010401,CRM.webHandler03010402,CRM.webHandler03010403,CRM.webHandler03010404,CRM.webHandler030105,CRM.webHandler030106,CRM.webHandler030107,CRM.webHandler0303,CRM.webHandler0303_1,CRM.webHandler030301,CRM.webHandler0603,CRM.webHandler0604,CRM.webHandler0605,CRM.webHandler0606,CRM.webHandler9903,CRM.webHandler9903_1,CRM.webHandler9904,CRM.webHandler9905,CRM.webHandler0401,CRM.webHandler0401_1,CRM.webHandler040101,CRM.webHandler04010101,CRM.webHandler04010102,CRM.webHandler04010103,CRM.webHandler04010104,CRM.webHandler04010105,CRM.webHandler04010106,GTSB.propertyConfigurer,GTSB.smpSqlMapClient,GTSB.GTSBSpringBeanFactory,GTSB.gtsbEventServer,FTS.propertyConfigurer,FTS.smpSqlMapClient,FTS.FTSpringBeanFactory,FTS.ftsEventServer,GTSC-Web.propertyConfigurer,GTSC-Web.smpSqlMapClient,GTSC-Web.gtscEventServer,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient]; root of BeanFactory hierarchy
+11:33:18 INFO  [XmlWebApplicationContext] 272 beans defined in application context [Root WebApplicationContext]
+11:33:18 INFO  [PropertyPlaceholderConfigurer] Loading properties file from class path resource [CRM-CFG/crm-applicationcontext.properties]
+11:33:18 INFO  [DefaultAopProxyFactory] CGLIB2 available: proxyTargetClass feature enabled
+11:33:18 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:33:18 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:33:18 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [GTSE-Web.propertyConfigurer,GTSE-Web.actionRegister,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,BPC3.propertyConfigurer,BPC3.smpSqlMapClient,sqlMapClientTemplate,BPC3.locator,com.nstc.bpc3.ajax.PublicActionRegister,bankOrderService,bankOrderDao,GTSA-Web.propertyConfigurer,GTSA-Web.actionRegister,admp.smpSqlMapClient,baseDataDAO,baseDataService,GTSK-Web.propertyConfigurer,GTSK-Web.smpSqlMapClient,GTSK-Web.gtskEventServer,AIMS.propertyConfigurer,AIMS.smpSqlMapClient,AIMS.rootDao,AIMS.daoFacade,AIMS.associateBankDao,AIMS.commonDao,AIMS.accountUsageDao,AIMS.brokerDao,AIMS.accountTypeDao,AIMS.accountNatureDao,AIMS.astBankLogDao,AIMS.accountApplyDao,AIMS.acntInspectionDao,AIMS.accountInfoDao,AIMS.dwmDao,AIMS.inDirectAcntDao,AIMS.cancelAccountDao,AIMS.accountUpdateDao,AIMS.accountSyncDao,AIMS.accountBalanceDao,AIMS.bankDetailDao,AIMS.baseServer,AIMS.locator,AIMS.commonService,AIMS.accountUsageService,AIMS.accountTypeService,AIMS.accountNatureService,AIMS.brokerService,AIMS.associateBankService,AIMS.astBankLogService,AIMS.accountApplyService,AIMS.bizFlowService,AIMS.acntInspectionService,AIMS.accountInfoService,AIMS.dwmService,AIMS.inDirectAcntService,AIMS.cancelAccountService,AIMS.accountUpdateService,AIMS.accountSyncService,AIMS.accountBalanceService,AIMS.bankDetailService,AIMS.saveAccountAssociateflagService,AIMS.bp3CallBackService,AIMS.gtsaConnectService,AIMS.remoteServer,AIMS.RemoteService,AIMS.autoTask,AIMS.autoTaskJob,AIMS.autoTaskJobTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,AIMS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources#1,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,CRM.propertyConfigurer,com.nstc.waf.spring.Resources#2,CRM.locator,CRM.baseServer,CRM.commonServer,CRM.cltConfInfoServer,CRM.validateServer,CRM.cltBlackListServer,CRM.cltStkshareServer,CRM.cltStockServer,CRM.cltFileServer,CRM.cltCltInfoServer,CRM.cltCltAccountsServer,CRM.cltCltAccountsTblServer,CRM.reginoServer,CRM.userGroupServer,CRM.userGroupInfoServer,CRM.imageDataQuoteSetServer,CRM.cltProfileServer,CRM.cltInfoAttrServer,CRM.cltSubTypeServer,CRM.cltTypeServer,CRM.cltTypeFieldServer,CRM.cltConfInfoQuoteServer,CRM.cltBaseInfoManageServer,CRM.cltBaseInfoApproveServer,CRM.cltMemberTypeServer,CRM.remoteSmsServer,CRM.cltCorresspondentServer,CRM.cltManageInfoServer,CRM.daoFacade,CRM.baseDao,CRM.commonDao,CRM.cltConfInfoDao,CRM.cltBlackListDao,CRM.cltStkshareDao,CRM.cltStockDao,CRM.cltFileDao,CRM.cltCltInfoDao,CRM.cltCltAccountsDao,CRM.cltCltAccountsTblDao,CRM.reginoDao,CRM.userGroupDao,CRM.userGroupInfoDao,CRM.imageDataQuoteSetDao,CRM.cltInfoAttrDao,CRM.cltSubTypeDao,CRM.cltTypeDao,CRM.cltTypeFieldDao,CRM.cltConfInfoQuoteDao,CRM.cltBaseInfoManageDao,CRM.cltBaseInfoApproveDao,CRM.cltMemberTypeDao,CRM.cltCorresspondentDao,CRM.cltManageInfoDao,CRM.baseTxProxy,CRM.SmsMainService,CRM.webHandlerFactoryBySpringCreator,CRM.abstractWebHandler,CRM.webHanderBpRegion,CRM.getKeyInfoWebHandler,CRM.commonExtWebAction,CRM.webHandler0101XZQH,CRM.testHandler,CRM.downloadHandler,CRM.webHandler0101,CRM.webHandler0101Save,CRM.webHandler0101Remove,CRM.webHandler0105Upload,CRM.webHandler0108,CRM.webHandler0108Save,CRM.webHandler0108Remove,CRM.webHandler0201,CRM.webHandler0201_1,CRM.webHandler0201Save,CRM.webHandler0201Save_1,CRM.webHandler0201Remove,CRM.webHandler0201Remove_1,CRM.webHandler020101,CRM.webHandler020101_1,CRM.webHandler020102,CRM.webHandler020102_1,CRM.webHandler020102Save,CRM.webHandler020102Save_1,CRM.webHandler020102Remove,CRM.webHandler020102Remove_1,CRM.webHandler0202,CRM.webHandler0202Save,CRM.webHandler0202Remove,CRM.webHandler0203,CRM.webHandler0203Save,CRM.webHandler0203Remove,CRM.webHandler020301,CRM.webHandler020301Save,CRM.webHandler020301Remove,CRM.webHandler020302,CRM.webHandler020302Save,CRM.webHandler020302Remove,CRM.webHandler0204,CRM.webHandler0204Upload,CRM.webHandler020401,CRM.webHandler020401Remove,CRM.webHandler020402,CRM.webHandler0205,CRM.webHandler0205Save,CRM.webHandler0205Remove,CRM.webHandler0206,CRM.webHandler0206Save,CRM.webHandler0206Remove,CRM.webHandler0207,CRM.webHandler0207Upload,CRM.webHandler020701,CRM.webHandler020703,CRM.webHandler020704,CRM.webHandler020701Remove,CRM.webHandler020702,CRM.webHandler0301,CRM.webHandler0301_1,CRM.webHandler030101,CRM.webHandler030102,CRM.webHandler030103,CRM.webHandler030104,CRM.webHandler03010401,CRM.webHandler03010402,CRM.webHandler03010403,CRM.webHandler03010404,CRM.webHandler030105,CRM.webHandler030106,CRM.webHandler030107,CRM.webHandler0303,CRM.webHandler0303_1,CRM.webHandler030301,CRM.webHandler0603,CRM.webHandler0604,CRM.webHandler0605,CRM.webHandler0606,CRM.webHandler9903,CRM.webHandler9903_1,CRM.webHandler9904,CRM.webHandler9905,CRM.webHandler0401,CRM.webHandler0401_1,CRM.webHandler040101,CRM.webHandler04010101,CRM.webHandler04010102,CRM.webHandler04010103,CRM.webHandler04010104,CRM.webHandler04010105,CRM.webHandler04010106,GTSB.propertyConfigurer,GTSB.smpSqlMapClient,GTSB.GTSBSpringBeanFactory,GTSB.gtsbEventServer,FTS.propertyConfigurer,FTS.smpSqlMapClient,FTS.FTSpringBeanFactory,FTS.ftsEventServer,GTSC-Web.propertyConfigurer,GTSC-Web.smpSqlMapClient,GTSC-Web.gtscEventServer,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient]; root of BeanFactory hierarchy]
+11:33:18 INFO  [Environment] Hibernate 3.1.3
+11:33:18 INFO  [Environment] hibernate.properties not found
+11:33:18 INFO  [Environment] using CGLIB reflection optimizer
+11:33:18 INFO  [Environment] using JDK 1.4 java.sql.Timestamp handling
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.DbBizCase -> BizCase
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizHistory -> BizHistory
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizRight -> BizRight
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizCaseDispatchHistoryView -> VW_DispatchHistory
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.NsClient -> NsClient
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.WfUser -> BizWfUser
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizAgency -> BIZ_AGENCY
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcessing -> BIZPROCESSING
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcRight -> BizProcRight
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizActionType -> BIZ_ACTION_TYPE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlow -> BIZ_FLOW
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTask -> BIZ_TASKS
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizAllocs -> BIZ_ALLOCS
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizActions -> BIZ_TASK_ACTION
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAllocation -> BIZ_ALLOCATIONS
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizResourceRule -> BIZ_RESOURCE_RULES
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizCondition -> BIZ_CONDITION
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizRuleType -> BIZ_RULE_TYPE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAction -> BIZ_ACTION
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskType -> BIZ_TASK_TYPE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlowType -> BIZ_FLOW_TYPE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizReject -> BIZ_REJECTS
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskAction -> BIZ_TASK_ACTION
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskBusinessType -> BIZ_TASK_BUSINESS_TYPE
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizFlow.bizTasks -> BIZ_TASKS
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizConditions -> BIZ_CONDITION
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizRejects -> BIZ_REJECTS
+11:33:19 WARN  [RootClass] composite-id class does not override equals(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+11:33:19 WARN  [RootClass] composite-id class does not override hashCode(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+11:33:19 INFO  [ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+11:33:19 INFO  [SettingsFactory] RDBMS: Oracle, version: Oracle Database 12c Enterprise Edition Release 12.1.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+11:33:19 INFO  [SettingsFactory] JDBC driver: Oracle JDBC driver, version: 12.1.0.1.0
+11:33:19 INFO  [Dialect] Using dialect: org.hibernate.dialect.OracleDialect
+11:33:19 INFO  [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+11:33:19 INFO  [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:33:19 INFO  [SettingsFactory] Automatic flush during beforeCompletion(): enabled
+11:33:19 INFO  [SettingsFactory] Automatic session close at end of transaction: disabled
+11:33:19 INFO  [SettingsFactory] JDBC batch size: 15
+11:33:19 INFO  [SettingsFactory] JDBC batch updates for versioned data: disabled
+11:33:19 INFO  [SettingsFactory] Scrollable result sets: enabled
+11:33:19 INFO  [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+11:33:19 INFO  [SettingsFactory] Connection release mode: on_close
+11:33:19 INFO  [SettingsFactory] Maximum outer join fetch depth: 3
+11:33:19 INFO  [SettingsFactory] Default batch fetch size: 8
+11:33:19 INFO  [SettingsFactory] Generate SQL with comments: disabled
+11:33:19 INFO  [SettingsFactory] Order SQL updates by primary key: enabled
+11:33:19 INFO  [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:33:19 INFO  [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+11:33:19 INFO  [SettingsFactory] Query language substitutions: {}
+11:33:19 INFO  [SettingsFactory] Second-level cache: enabled
+11:33:19 INFO  [SettingsFactory] Query cache: enabled
+11:33:19 INFO  [SettingsFactory] Cache provider: org.hibernate.cache.EhCacheProvider
+11:33:19 INFO  [SettingsFactory] Optimize cache for minimal puts: disabled
+11:33:19 INFO  [SettingsFactory] Structured second-level cache entries: disabled
+11:33:19 INFO  [SettingsFactory] Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+11:33:19 INFO  [SettingsFactory] Statistics: disabled
+11:33:19 INFO  [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+11:33:19 INFO  [SettingsFactory] Default entity-mode: pojo
+11:33:19 INFO  [SessionFactoryImpl] building session factory
+11:33:19 WARN  [ConfigurationFactory] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+11:33:19 INFO  [Environment] Hibernate 3.1.3
+11:33:19 INFO  [Environment] hibernate.properties not found
+11:33:19 INFO  [Environment] using CGLIB reflection optimizer
+11:33:19 INFO  [Environment] using JDK 1.4 java.sql.Timestamp handling
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.DbBizCase -> BizCase
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizHistory -> BizHistory
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizRight -> BizRight
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizCaseDispatchHistoryView -> VW_DispatchHistory
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.NsClient -> NsClient
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.WfUser -> BizWfUser
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizAgency -> BIZ_AGENCY
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcessing -> BIZPROCESSING
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcRight -> BizProcRight
+11:33:19 INFO  [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizActionType -> BIZ_ACTION_TYPE
+11:33:19 INFO  [UpdateTimestampsCache] starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlow -> BIZ_FLOW
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTask -> BIZ_TASKS
+11:33:19 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizAllocs -> BIZ_ALLOCS
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizActions -> BIZ_TASK_ACTION
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAllocation -> BIZ_ALLOCATIONS
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizResourceRule -> BIZ_RESOURCE_RULES
+11:33:19 INFO  [StandardQueryCache] starting query cache at region: org.hibernate.cache.StandardQueryCache
+11:33:19 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizCondition -> BIZ_CONDITION
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizRuleType -> BIZ_RULE_TYPE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAction -> BIZ_ACTION
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskType -> BIZ_TASK_TYPE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlowType -> BIZ_FLOW_TYPE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizReject -> BIZ_REJECTS
+11:33:19 INFO  [HibernateTransactionManager] Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@1ec49db] of Hibernate SessionFactory for HibernateTransactionManager
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskAction -> BIZ_TASK_ACTION
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskBusinessType -> BIZ_TASK_BUSINESS_TYPE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltBlackList -> CLT_BLACK_LIST
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltInfo -> CLT_CLT_INFO
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltConfInfo -> CLT_CONF_INFO
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltContact -> CLT_CONTACT
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltContribute -> CLT_CONTRIBUTE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCorresspondent -> CLT_CORRESSPONDENT
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltFile -> CLT_FILE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltFileLog -> CLT_FILE_LOG
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltParner -> CLT_PARNER
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltSpEvent -> CLT_SP_EVENT
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltSpModify -> CLT_SP_MODIFY
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltStkshare -> CLT_STKSHARE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltStock -> CLT_STOCK
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltInfoTbl -> CLT_CLT_INFO_TBL
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.Wfuser -> WFUSER
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.Region -> CLT_REGION
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltAccounts -> CLT_CLT_ACCOUNTS
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltAccountsTbl -> CLT_CLT_ACCOUNTSTBL
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltConfInfoValue -> CLT_CONF_INFO_VALUE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.BpBank -> BP_BANK
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.ElRegion -> EL_REGION
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.Cnaps -> CNAPS
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CnapsBank -> CNAPS_BANK
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltUserGroupInfo -> CLT_USER_GROUP_INFO
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltImageDataQuote -> CLT_IMAGE_DATA_QUOTE
+11:33:19 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltConfInfoValueTbl -> CLT_CONF_INFO_VALUE_TBL
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizFlow.bizTasks -> BIZ_TASKS
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizConditions -> BIZ_CONDITION
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizRejects -> BIZ_REJECTS
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.crm.domain.CltConfInfo.cltCltInfosForCreditlevel -> CLT_CLT_INFO
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.crm.domain.CltConfInfo.cltCltInfosForCreditrating -> CLT_CLT_INFO
+11:33:19 INFO  [HbmBinder] Mapping collection: com.nstc.crm.domain.CltConfInfo.cltCltInfosForIndustry -> CLT_CLT_INFO
+11:33:20 WARN  [RootClass] composite-id class does not override equals(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+11:33:20 WARN  [RootClass] composite-id class does not override hashCode(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+11:33:20 INFO  [ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+11:33:20 INFO  [SettingsFactory] RDBMS: Oracle, version: Oracle Database 12c Enterprise Edition Release 12.1.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+11:33:20 INFO  [SettingsFactory] JDBC driver: Oracle JDBC driver, version: 12.1.0.1.0
+11:33:20 INFO  [CacheManager] Creating new CacheManager singleton
+11:33:20 WARN  [CacheManager] Could not load /whirlycache.xml file. Falling back to defaults.
+11:33:20 INFO  [Dialect] Using dialect: org.hibernate.dialect.OracleDialect
+11:33:20 INFO  [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+11:33:20 INFO  [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:33:20 INFO  [SettingsFactory] Automatic flush during beforeCompletion(): enabled
+11:33:20 INFO  [SettingsFactory] Automatic session close at end of transaction: disabled
+11:33:20 INFO  [SettingsFactory] JDBC batch size: 15
+11:33:20 INFO  [SettingsFactory] JDBC batch updates for versioned data: disabled
+11:33:20 INFO  [SettingsFactory] Scrollable result sets: enabled
+11:33:20 INFO  [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+11:33:20 INFO  [SettingsFactory] Connection release mode: on_close
+11:33:20 INFO  [SettingsFactory] Maximum outer join fetch depth: 3
+11:33:20 INFO  [SettingsFactory] Default batch fetch size: 8
+11:33:20 INFO  [SettingsFactory] Generate SQL with comments: disabled
+11:33:20 INFO  [SettingsFactory] Order SQL updates by primary key: enabled
+11:33:20 INFO  [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:33:20 INFO  [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+11:33:20 INFO  [SettingsFactory] Query language substitutions: {}
+11:33:20 INFO  [SettingsFactory] Second-level cache: enabled
+11:33:20 INFO  [SettingsFactory] Query cache: enabled
+11:33:20 INFO  [SettingsFactory] Cache provider: org.hibernate.cache.EhCacheProvider
+11:33:20 INFO  [SettingsFactory] Optimize cache for minimal puts: disabled
+11:33:20 INFO  [SettingsFactory] Structured second-level cache entries: disabled
+11:33:20 INFO  [SettingsFactory] Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+11:33:20 INFO  [SettingsFactory] Statistics: disabled
+11:33:20 INFO  [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+11:33:20 INFO  [SettingsFactory] Default entity-mode: pojo
+11:33:20 INFO  [SessionFactoryImpl] building session factory
+11:33:20 INFO  [ContextLoader] Using context class [org.springframework.web.context.support.XmlWebApplicationContext] for root WebApplicationContext
+11:33:20 WARN  [ConfigurationFactory] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/n9_servers/sms_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+11:33:20 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 4557 ms
+11:33:20 INFO  [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+11:33:20 INFO  [UpdateTimestampsCache] starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+11:33:20 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+11:33:20 INFO  [StandardQueryCache] starting query cache at region: org.hibernate.cache.StandardQueryCache
+11:33:20 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+11:33:20 INFO  [HibernateTransactionManager] Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@ea4081] of Hibernate SessionFactory for HibernateTransactionManager
+11:33:21 INFO  [SimpleThreadPool] Job execution threads will use class loader of thread: main
+11:33:21 INFO  [QuartzScheduler] Quartz Scheduler v.1.5.1 created.
+11:33:21 INFO  [RAMJobStore] RAMJobStore initialized.
+11:33:21 INFO  [StdSchedulerFactory] Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+11:33:21 INFO  [StdSchedulerFactory] Quartz scheduler version: 1.5.1
+11:33:21 INFO  [SchedulerFactoryBean] Starting Quartz scheduler now
+11:33:21 INFO  [QuartzScheduler] Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+11:33:21 INFO  [CacheManager] Creating new CacheManager singleton
+11:33:21 WARN  [CacheManager] Could not load /whirlycache.xml file. Falling back to defaults.
+11:33:21 INFO  [ContextLoader] Using context class [org.springframework.web.context.support.XmlWebApplicationContext] for root WebApplicationContext
+11:33:21 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 4607 ms
+11:33:50 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:33:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:34:20 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:34:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:34:50 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:34:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:35:20 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:35:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:35:50 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:35:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:36:20 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:36:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:36:50 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:36:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:37:20 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:37:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:37:50 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:37:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:38:20 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:38:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:38:50 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:38:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:39:20 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:39:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:39:50 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:39:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:40:20 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:40:21 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:40:50 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:40:51 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:41:10 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+11:41:10 INFO  [CollectionFactory] JDK 1.4+ collections available
+11:41:10 INFO  [CollectionFactory] Commons Collections 3.x available
+11:41:10 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GDPS-CFG/GDPS-root-applicationcontext.xml]
+11:41:11 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GDPS-CFG/GDPS-remote-config.xml]
+11:41:11 INFO  [CollectionFactory] JDK 1.4+ collections available
+11:41:11 INFO  [CollectionFactory] Commons Collections 3.x available
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/OCS-Web-CFG/OCS-Web-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-orm-mapping.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BMMS-CFG/bmms-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BMMS-CFG/bmms-common-config.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admin-CFG/admin-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/SDM-Web-CFG/SDM-Web-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTCP-CFG/GTCP-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTCP-CFG/GTCP-orm-mapping.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admp-CFG/admp-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [waf-framework/waf-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from URL [jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/SmartPage-1.4.3.3.jar!/server/smp-httpclient-config.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from URL [jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/SmartPage-1.4.3.3.jar!/server/smp-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from URL [jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/SmartPage-1.4.3.3.jar!/server/smp-orm-mapping.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSE-Web-CFG/GTSE-Web-root-applicationcontext.xml]
+11:41:11 INFO  [XmlWebApplicationContext] Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [BILL.propertyConfigurer,GDPS.locator,BILL.dataSource,GDPS.smpSqlMapClient,BILL.txService,BILL.caseHandler,BILL.billTxProcess,BILL.GDPSAllocation,BILL.txHandlerFac,BILL.txHandlerSupport,BILL.commonTxHandler,BILL.castBmmsTxHandler,BILL.registTxHandler,BILL.outOfWarehouseTxHandler,BILL.savePayeeConfigTxHandler,BILL.limitOutTxHandler,BILL.limitCommonTxHandler,BILL.txHandler_T106,BILL.txHandler_T116,BILL.txHandler_T120,BILL.txHandler_T101,BILL.txHandler_T107,BILL.txHandler_T117,BILL.txHandler_T105,BILL.txHandler_T115,BILL.txHandler_T201,BILL.txHandler_T202,BILL.txHandler_T203,BILL.txHandler_T204,BILL.txHandler_T205,BILL.txHandler_T108,BILL.txHandler_T123,BILL.txHandler_T113,BILL.txHandler_T124,BILL.txHandler_T139,BILL.txHandler_T137,BILL.txHandler_T138,BILL.txHandler_T119,BILL.txHandler_T121,BILL.txHandler_T111,BILL.txHandler_T122,BILL.txHandler_T104,BILL.txHandler_T114,BILL.txHandler_T102,BILL.txHandler_T109,BILL.txHandler_T103,BILL.txHandler_T110,BILL.txHandler_T126,BILL.txHandler_T112,BILL.txHandler_T125,BILL.txHandler_T127,BILL.txHandler_T128,BILL.txHandler_T129,BILL.txHandler_T130,BILL.txHandler_T131,BILL.txHandler_T132,BILL.txHandler_T133,BILL.txHandler_T134,BILL.txHandler_T136,BILL.txHandler_T206,BILL.txHandler_T301,BILL.txServer,BILL.txLogServer,BILL.ledgerServer,BILL.billServer,GDPS.gdpsBaseConfigServer,BILL.memberServer,BILL.wareHouseServer,BILL.bankAccountServer,BILL.actFunServer,BILL.bankBizTypeServer,BILL.bankServer,BILL.billTxFlowServer,BILL.baseDao,BILL.txDao,BILL.outletDao,BILL.txBillDao,BILL.txLogDao,BILL.ledgerDao,BILL.billDao,GDPS.billPayeeAccountDao,GDPS.billPayeeConfigDao,BILL.memberDao,BILL.billWareHouseDao,BILL.bankAccountDao,BILL.bankBizTypeDao,BILL.bankDao,BILL.sysParamDao,BILL.billTxFlowDao,GDPS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,GDPS.excelParser,GDPS.validateExcel,GDPS.validateCommon,GDPS.validateT101,GDPS.validateT105,GDPS.validateT115,GDPS.validateT201,GDPS.validateT202,GDPS.validateT206,GDPS.validateT305,GDPS.budgetHelper,GDPS.budgetService,GDPS.txterm,GDPS.bcode,GDPS.firm,GDPS.budgetTermValidator,GDPS.quota,GDPS.validatorFactory,BILL.sysConfig,framework.springBeanFactory,GDPS.parserHelper,GDPS.castGDPSModelUtil,GDPS.urlMapping,GDPS.billBeanConverter,GDPS.BPService,GDPS.BPConnCallback,GDPS.connCallback.remoting,GDPS.DBMS.remoting,GDPS.remoteDbmsService,GDPS.gdpsService,GDPS.commonSysBizHandlerFactory,GDPS.default,GDPS.cfbserverhelper,GDPS.cfbEventServer,GDPS.bmsRemoteService,GDPS.ebdEventServer,GDPS.ebdServer,GDPS.ebdDataFactory,GDPS.defaultMapper_105,GDPS.defaultMapper_121,GDPS.defaultMapper_137,GDPS.defaultMapper_138,GDPS.gdpsRemoteService,GDPS.xerpEventServer,GDPS.cnapsService,GDPS.callBackService,GDPS.callBackFactory,GDPS.G6callBack,OCS-Web.propertyConfigurer,OCS-Web.ajaxActionRegister,OCS-Web.smpSqlMapClient,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,BMMS.propertyConfigurer,BMMS.baseDao,BMMS.smpSqlMapClient,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#2,BMMS.transactionInterceptor,BMMS.locator,BMMS.bmmsProcess,BMMS.businessService,BMMS.businessHandlerFactory,BMMS.busiHandler_change,BMMS.busiHandler_modifyDraft,BMMS.busiHandler_end,BMMS.busiHandler_disable,BMMS.busiHandler_out,BMMS.busiHandler_enterDraft,BMMS.busiHandler_changeDraft,BMMS.busiCommenHandler,BMMS.busiHandlerSupport,BMMS.parserHelper,BMMS.excelParser,BMMS.validateExcel,BMMS.validateCommon,BMMS.validateDraft,BMMS.validateCheck,BMMS.validateDlc,BMMS.validateIlc,BMMS.validateLg,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources#1,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,SDM-Web.propertyConfigurer,SDM-Web.actionRegister,GTCP.propertyConfigurer,GTCP.sqlMapClient,GTCP.rootDao,GTCP.daoFacade,GTCP.commonDao,GTCP.baseServer,GTCP.locator,GTCP.commonService,GTCP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#3,admp.smpSqlMapClient,baseDataDAO,baseDataService,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient,SMP.propertyConfigurer,SMP.httpInvokerRequestExecutor,SMP.httpclient,SMP.connectionManager,SMP.connectionManagerParams,SMP.locator,SMP.workButtonBusiness,SMP.uMHandleService,SMP.uMHandleDao,SMP.sqlMapClientTemplate,SMP.smpSqlMapClient,com.nstc.framework.core.Resources,SMP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#4]; root of BeanFactory hierarchy
+11:41:11 INFO  [XmlWebApplicationContext] 277 beans defined in application context [Root WebApplicationContext]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admin-CFG/admin-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BPC3-CFG/BPC3-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSA-Web-CFG/GTSA-Web-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/admp-CFG/admp-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSK-Web-CFG/GTSK-Web-root-applicationcontext.xml]
+11:41:11 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/AIMS-CFG/AIMS-root-applicationcontext.xml]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/AIMS-CFG/AIMS-orm-mapping.xml]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-root-applicationcontext.xml]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/BIZFLOW-CFG/BIZFLOW-orm-mapping.xml]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-root-applicationcontext.xml]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-applicationcontext.xml]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-mapping.xml]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/CRM-CFG/crm-webcontext.xml]
+11:41:12 INFO  [PropertyPlaceholderConfigurer] Loading properties file from class path resource [smartform.properties]
+11:41:12 INFO  [PropertyPlaceholderConfigurer] Loading properties file from class path resource [common.properties]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSB-CFG/GTSB-root-applicationcontext.xml]
+11:41:12 INFO  [DefaultAopProxyFactory] CGLIB2 available: proxyTargetClass feature enabled
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/FTS-CFG/FTS-root-applicationcontext.xml]
+11:41:12 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:41:12 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:41:12 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#2' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:41:12 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#3' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/classes/GTSC-Web-CFG/GTSC-Web-root-applicationcontext.xml]
+11:41:12 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#4' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [waf-framework/waf-applicationcontext.xml]
+11:41:12 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [BILL.propertyConfigurer,GDPS.locator,BILL.dataSource,GDPS.smpSqlMapClient,BILL.txService,BILL.caseHandler,BILL.billTxProcess,BILL.GDPSAllocation,BILL.txHandlerFac,BILL.txHandlerSupport,BILL.commonTxHandler,BILL.castBmmsTxHandler,BILL.registTxHandler,BILL.outOfWarehouseTxHandler,BILL.savePayeeConfigTxHandler,BILL.limitOutTxHandler,BILL.limitCommonTxHandler,BILL.txHandler_T106,BILL.txHandler_T116,BILL.txHandler_T120,BILL.txHandler_T101,BILL.txHandler_T107,BILL.txHandler_T117,BILL.txHandler_T105,BILL.txHandler_T115,BILL.txHandler_T201,BILL.txHandler_T202,BILL.txHandler_T203,BILL.txHandler_T204,BILL.txHandler_T205,BILL.txHandler_T108,BILL.txHandler_T123,BILL.txHandler_T113,BILL.txHandler_T124,BILL.txHandler_T139,BILL.txHandler_T137,BILL.txHandler_T138,BILL.txHandler_T119,BILL.txHandler_T121,BILL.txHandler_T111,BILL.txHandler_T122,BILL.txHandler_T104,BILL.txHandler_T114,BILL.txHandler_T102,BILL.txHandler_T109,BILL.txHandler_T103,BILL.txHandler_T110,BILL.txHandler_T126,BILL.txHandler_T112,BILL.txHandler_T125,BILL.txHandler_T127,BILL.txHandler_T128,BILL.txHandler_T129,BILL.txHandler_T130,BILL.txHandler_T131,BILL.txHandler_T132,BILL.txHandler_T133,BILL.txHandler_T134,BILL.txHandler_T136,BILL.txHandler_T206,BILL.txHandler_T301,BILL.txServer,BILL.txLogServer,BILL.ledgerServer,BILL.billServer,GDPS.gdpsBaseConfigServer,BILL.memberServer,BILL.wareHouseServer,BILL.bankAccountServer,BILL.actFunServer,BILL.bankBizTypeServer,BILL.bankServer,BILL.billTxFlowServer,BILL.baseDao,BILL.txDao,BILL.outletDao,BILL.txBillDao,BILL.txLogDao,BILL.ledgerDao,BILL.billDao,GDPS.billPayeeAccountDao,GDPS.billPayeeConfigDao,BILL.memberDao,BILL.billWareHouseDao,BILL.bankAccountDao,BILL.bankBizTypeDao,BILL.bankDao,BILL.sysParamDao,BILL.billTxFlowDao,GDPS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,GDPS.excelParser,GDPS.validateExcel,GDPS.validateCommon,GDPS.validateT101,GDPS.validateT105,GDPS.validateT115,GDPS.validateT201,GDPS.validateT202,GDPS.validateT206,GDPS.validateT305,GDPS.budgetHelper,GDPS.budgetService,GDPS.txterm,GDPS.bcode,GDPS.firm,GDPS.budgetTermValidator,GDPS.quota,GDPS.validatorFactory,BILL.sysConfig,framework.springBeanFactory,GDPS.parserHelper,GDPS.castGDPSModelUtil,GDPS.urlMapping,GDPS.billBeanConverter,GDPS.BPService,GDPS.BPConnCallback,GDPS.connCallback.remoting,GDPS.DBMS.remoting,GDPS.remoteDbmsService,GDPS.gdpsService,GDPS.commonSysBizHandlerFactory,GDPS.default,GDPS.cfbserverhelper,GDPS.cfbEventServer,GDPS.bmsRemoteService,GDPS.ebdEventServer,GDPS.ebdServer,GDPS.ebdDataFactory,GDPS.defaultMapper_105,GDPS.defaultMapper_121,GDPS.defaultMapper_137,GDPS.defaultMapper_138,GDPS.gdpsRemoteService,GDPS.xerpEventServer,GDPS.cnapsService,GDPS.callBackService,GDPS.callBackFactory,GDPS.G6callBack,OCS-Web.propertyConfigurer,OCS-Web.ajaxActionRegister,OCS-Web.smpSqlMapClient,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,BMMS.propertyConfigurer,BMMS.baseDao,BMMS.smpSqlMapClient,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#2,BMMS.transactionInterceptor,BMMS.locator,BMMS.bmmsProcess,BMMS.businessService,BMMS.businessHandlerFactory,BMMS.busiHandler_change,BMMS.busiHandler_modifyDraft,BMMS.busiHandler_end,BMMS.busiHandler_disable,BMMS.busiHandler_out,BMMS.busiHandler_enterDraft,BMMS.busiHandler_changeDraft,BMMS.busiCommenHandler,BMMS.busiHandlerSupport,BMMS.parserHelper,BMMS.excelParser,BMMS.validateExcel,BMMS.validateCommon,BMMS.validateDraft,BMMS.validateCheck,BMMS.validateDlc,BMMS.validateIlc,BMMS.validateLg,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources#1,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,SDM-Web.propertyConfigurer,SDM-Web.actionRegister,GTCP.propertyConfigurer,GTCP.sqlMapClient,GTCP.rootDao,GTCP.daoFacade,GTCP.commonDao,GTCP.baseServer,GTCP.locator,GTCP.commonService,GTCP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#3,admp.smpSqlMapClient,baseDataDAO,baseDataService,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient,SMP.propertyConfigurer,SMP.httpInvokerRequestExecutor,SMP.httpclient,SMP.connectionManager,SMP.connectionManagerParams,SMP.locator,SMP.workButtonBusiness,SMP.uMHandleService,SMP.uMHandleDao,SMP.sqlMapClientTemplate,SMP.smpSqlMapClient,com.nstc.framework.core.Resources,SMP.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#4]; root of BeanFactory hierarchy]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [bmms-datasource.xml]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [bmms-service-context.xml]
+11:41:12 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [bmms-common-config.xml]
+11:41:12 INFO  [ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=21478439]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [dataSource.bmmsjndi,BMMS.propertyConfigurer,BMMS.dataSource,BMMS.baseDao,BMMS.sqlMapClient,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler]; root of BeanFactory hierarchy
+11:41:12 INFO  [ClassPathXmlApplicationContext] 41 beans defined in application context [org.springframework.context.support.ClassPathXmlApplicationContext;hashCode=21478439]
+11:41:12 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [dataSource.bmmsjndi,BMMS.propertyConfigurer,BMMS.dataSource,BMMS.baseDao,BMMS.sqlMapClient,BMMS.defaultBmmsService,BMMS.serviceLocator,BMMS.sysConfig,BMMS.memberService,BMMS.billService,BMMS.wareHouseBillService,BMMS.wareHouseService,BMMS.bookService,BMMS.billTransLogService,BMMS.bankOutletService,BMMS.bankService,BMMS.txRecordingRulesService,BMMS.billDaoFactory,BMMS.shippingDocumentDao,BMMS.billDao,BMMS.draftDao,BMMS.wareHouseBillDao,BMMS.wareHouseDao,BMMS.bookDao,BMMS.billTransLogDao,BMMS.checkDao,BMMS.domesticLetterCreditDao,BMMS.internationalLetterCreditDao,BMMS.letterGuaranteeDao,BMMS.bankOutletDao,BMMS.bankDao,BMMS.memberDao,BMMS.txRecordingRulesDao,BMMS.txHanlderFac,BMMS.txHanlderSupport,BMMS.EnterwhTxHandler,BMMS.CommonTransTxHandler,BMMS.outwhTxHandler,BMMS.regeditTxHandler,BMMS.billModifyTxHanlder,BMMS.returnTxHandler]; root of BeanFactory hierarchy]
+11:41:12 INFO  [XmlWebApplicationContext] Bean factory for application context [Root WebApplicationContext]: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [GTSE-Web.propertyConfigurer,GTSE-Web.actionRegister,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,BPC3.propertyConfigurer,BPC3.smpSqlMapClient,sqlMapClientTemplate,BPC3.locator,com.nstc.bpc3.ajax.PublicActionRegister,bankOrderService,bankOrderDao,GTSA-Web.propertyConfigurer,GTSA-Web.actionRegister,admp.smpSqlMapClient,baseDataDAO,baseDataService,GTSK-Web.propertyConfigurer,GTSK-Web.smpSqlMapClient,GTSK-Web.gtskEventServer,AIMS.propertyConfigurer,AIMS.smpSqlMapClient,AIMS.rootDao,AIMS.daoFacade,AIMS.associateBankDao,AIMS.commonDao,AIMS.accountUsageDao,AIMS.brokerDao,AIMS.accountTypeDao,AIMS.accountNatureDao,AIMS.astBankLogDao,AIMS.accountApplyDao,AIMS.acntInspectionDao,AIMS.accountInfoDao,AIMS.dwmDao,AIMS.inDirectAcntDao,AIMS.cancelAccountDao,AIMS.accountUpdateDao,AIMS.accountSyncDao,AIMS.accountBalanceDao,AIMS.bankDetailDao,AIMS.baseServer,AIMS.locator,AIMS.commonService,AIMS.accountUsageService,AIMS.accountTypeService,AIMS.accountNatureService,AIMS.brokerService,AIMS.associateBankService,AIMS.astBankLogService,AIMS.accountApplyService,AIMS.bizFlowService,AIMS.acntInspectionService,AIMS.accountInfoService,AIMS.dwmService,AIMS.inDirectAcntService,AIMS.cancelAccountService,AIMS.accountUpdateService,AIMS.accountSyncService,AIMS.accountBalanceService,AIMS.bankDetailService,AIMS.saveAccountAssociateflagService,AIMS.bp3CallBackService,AIMS.gtsaConnectService,AIMS.remoteServer,AIMS.RemoteService,AIMS.autoTask,AIMS.autoTaskJob,AIMS.autoTaskJobTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,AIMS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources#1,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,CRM.propertyConfigurer,com.nstc.waf.spring.Resources#2,CRM.locator,CRM.baseServer,CRM.commonServer,CRM.cltConfInfoServer,CRM.validateServer,CRM.cltBlackListServer,CRM.cltStkshareServer,CRM.cltStockServer,CRM.cltFileServer,CRM.cltCltInfoServer,CRM.cltCltAccountsServer,CRM.cltCltAccountsTblServer,CRM.reginoServer,CRM.userGroupServer,CRM.userGroupInfoServer,CRM.imageDataQuoteSetServer,CRM.cltProfileServer,CRM.cltInfoAttrServer,CRM.cltSubTypeServer,CRM.cltTypeServer,CRM.cltTypeFieldServer,CRM.cltConfInfoQuoteServer,CRM.cltBaseInfoManageServer,CRM.cltBaseInfoApproveServer,CRM.cltMemberTypeServer,CRM.remoteSmsServer,CRM.cltCorresspondentServer,CRM.cltManageInfoServer,CRM.daoFacade,CRM.baseDao,CRM.commonDao,CRM.cltConfInfoDao,CRM.cltBlackListDao,CRM.cltStkshareDao,CRM.cltStockDao,CRM.cltFileDao,CRM.cltCltInfoDao,CRM.cltCltAccountsDao,CRM.cltCltAccountsTblDao,CRM.reginoDao,CRM.userGroupDao,CRM.userGroupInfoDao,CRM.imageDataQuoteSetDao,CRM.cltInfoAttrDao,CRM.cltSubTypeDao,CRM.cltTypeDao,CRM.cltTypeFieldDao,CRM.cltConfInfoQuoteDao,CRM.cltBaseInfoManageDao,CRM.cltBaseInfoApproveDao,CRM.cltMemberTypeDao,CRM.cltCorresspondentDao,CRM.cltManageInfoDao,CRM.baseTxProxy,CRM.SmsMainService,CRM.webHandlerFactoryBySpringCreator,CRM.abstractWebHandler,CRM.webHanderBpRegion,CRM.getKeyInfoWebHandler,CRM.commonExtWebAction,CRM.webHandler0101XZQH,CRM.testHandler,CRM.downloadHandler,CRM.webHandler0101,CRM.webHandler0101Save,CRM.webHandler0101Remove,CRM.webHandler0105Upload,CRM.webHandler0108,CRM.webHandler0108Save,CRM.webHandler0108Remove,CRM.webHandler0201,CRM.webHandler0201_1,CRM.webHandler0201Save,CRM.webHandler0201Save_1,CRM.webHandler0201Remove,CRM.webHandler0201Remove_1,CRM.webHandler020101,CRM.webHandler020101_1,CRM.webHandler020102,CRM.webHandler020102_1,CRM.webHandler020102Save,CRM.webHandler020102Save_1,CRM.webHandler020102Remove,CRM.webHandler020102Remove_1,CRM.webHandler0202,CRM.webHandler0202Save,CRM.webHandler0202Remove,CRM.webHandler0203,CRM.webHandler0203Save,CRM.webHandler0203Remove,CRM.webHandler020301,CRM.webHandler020301Save,CRM.webHandler020301Remove,CRM.webHandler020302,CRM.webHandler020302Save,CRM.webHandler020302Remove,CRM.webHandler0204,CRM.webHandler0204Upload,CRM.webHandler020401,CRM.webHandler020401Remove,CRM.webHandler020402,CRM.webHandler0205,CRM.webHandler0205Save,CRM.webHandler0205Remove,CRM.webHandler0206,CRM.webHandler0206Save,CRM.webHandler0206Remove,CRM.webHandler0207,CRM.webHandler0207Upload,CRM.webHandler020701,CRM.webHandler020703,CRM.webHandler020704,CRM.webHandler020701Remove,CRM.webHandler020702,CRM.webHandler0301,CRM.webHandler0301_1,CRM.webHandler030101,CRM.webHandler030102,CRM.webHandler030103,CRM.webHandler030104,CRM.webHandler03010401,CRM.webHandler03010402,CRM.webHandler03010403,CRM.webHandler03010404,CRM.webHandler030105,CRM.webHandler030106,CRM.webHandler030107,CRM.webHandler0303,CRM.webHandler0303_1,CRM.webHandler030301,CRM.webHandler0603,CRM.webHandler0604,CRM.webHandler0605,CRM.webHandler0606,CRM.webHandler9903,CRM.webHandler9903_1,CRM.webHandler9904,CRM.webHandler9905,CRM.webHandler0401,CRM.webHandler0401_1,CRM.webHandler040101,CRM.webHandler04010101,CRM.webHandler04010102,CRM.webHandler04010103,CRM.webHandler04010104,CRM.webHandler04010105,CRM.webHandler04010106,GTSB.propertyConfigurer,GTSB.smpSqlMapClient,GTSB.GTSBSpringBeanFactory,GTSB.gtsbEventServer,FTS.propertyConfigurer,FTS.smpSqlMapClient,FTS.FTSpringBeanFactory,FTS.ftsEventServer,GTSC-Web.propertyConfigurer,GTSC-Web.smpSqlMapClient,GTSC-Web.gtscEventServer,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient]; root of BeanFactory hierarchy
+11:41:12 INFO  [XmlWebApplicationContext] 272 beans defined in application context [Root WebApplicationContext]
+11:41:12 INFO  [PropertyPlaceholderConfigurer] Loading properties file from class path resource [CRM-CFG/crm-applicationcontext.properties]
+11:41:13 INFO  [DefaultAopProxyFactory] CGLIB2 available: proxyTargetClass feature enabled
+11:41:13 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:41:13 INFO  [XmlWebApplicationContext] Bean 'org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:41:13 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [GTSE-Web.propertyConfigurer,GTSE-Web.actionRegister,admin.smpSqlMapClient,admin.sqlMapClientTemplate,com.nstc.waf.spring.Resources,com.nstc.admin.ajax.PublicActionRegister,admin22.sqlMapClientTemplate22,admin.locator,admin.baseService,admin.userService,admin.treeService,admin.roleService,admin.roleGroupService,admin.baseDao,admin.userDao,admin.treeDao,admin.roleDao,admin.roleGroupDao,BPC3.propertyConfigurer,BPC3.smpSqlMapClient,sqlMapClientTemplate,BPC3.locator,com.nstc.bpc3.ajax.PublicActionRegister,bankOrderService,bankOrderDao,GTSA-Web.propertyConfigurer,GTSA-Web.actionRegister,admp.smpSqlMapClient,baseDataDAO,baseDataService,GTSK-Web.propertyConfigurer,GTSK-Web.smpSqlMapClient,GTSK-Web.gtskEventServer,AIMS.propertyConfigurer,AIMS.smpSqlMapClient,AIMS.rootDao,AIMS.daoFacade,AIMS.associateBankDao,AIMS.commonDao,AIMS.accountUsageDao,AIMS.brokerDao,AIMS.accountTypeDao,AIMS.accountNatureDao,AIMS.astBankLogDao,AIMS.accountApplyDao,AIMS.acntInspectionDao,AIMS.accountInfoDao,AIMS.dwmDao,AIMS.inDirectAcntDao,AIMS.cancelAccountDao,AIMS.accountUpdateDao,AIMS.accountSyncDao,AIMS.accountBalanceDao,AIMS.bankDetailDao,AIMS.baseServer,AIMS.locator,AIMS.commonService,AIMS.accountUsageService,AIMS.accountTypeService,AIMS.accountNatureService,AIMS.brokerService,AIMS.associateBankService,AIMS.astBankLogService,AIMS.accountApplyService,AIMS.bizFlowService,AIMS.acntInspectionService,AIMS.accountInfoService,AIMS.dwmService,AIMS.inDirectAcntService,AIMS.cancelAccountService,AIMS.accountUpdateService,AIMS.accountSyncService,AIMS.accountBalanceService,AIMS.bankDetailService,AIMS.saveAccountAssociateflagService,AIMS.bp3CallBackService,AIMS.gtsaConnectService,AIMS.remoteServer,AIMS.RemoteService,AIMS.autoTask,AIMS.autoTaskJob,AIMS.autoTaskJobTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean,AIMS.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator,BIZFLOW.locator,BIZFLOW.propertyConfigurer,BIZFLOW.api,BIZFLOW.convertHelper,BIZFLOW.bizFlowServiceProvider,BIZFLOW.flowManageDao,BIZFLOW.flowManageService,BIZFLOW.myService,BIZFLOW.bizFlowWebService,BIZFLOW.smpSqlMapClient,BIZFLOW.baseDao,BIZFLOW.historyContainer,BIZFLOW.rightManager,BIZFLOW.nsClientDAO,BIZFLOW.wfUserDAO,BIZFLOW.webLevelManager,BIZFLOW.engin,BIZFLOW.bizflowContext,com.nstc.waf.spring.Resources#1,BIZFLOW.transactionInterceptor,org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator#1,CRM.propertyConfigurer,com.nstc.waf.spring.Resources#2,CRM.locator,CRM.baseServer,CRM.commonServer,CRM.cltConfInfoServer,CRM.validateServer,CRM.cltBlackListServer,CRM.cltStkshareServer,CRM.cltStockServer,CRM.cltFileServer,CRM.cltCltInfoServer,CRM.cltCltAccountsServer,CRM.cltCltAccountsTblServer,CRM.reginoServer,CRM.userGroupServer,CRM.userGroupInfoServer,CRM.imageDataQuoteSetServer,CRM.cltProfileServer,CRM.cltInfoAttrServer,CRM.cltSubTypeServer,CRM.cltTypeServer,CRM.cltTypeFieldServer,CRM.cltConfInfoQuoteServer,CRM.cltBaseInfoManageServer,CRM.cltBaseInfoApproveServer,CRM.cltMemberTypeServer,CRM.remoteSmsServer,CRM.cltCorresspondentServer,CRM.cltManageInfoServer,CRM.daoFacade,CRM.baseDao,CRM.commonDao,CRM.cltConfInfoDao,CRM.cltBlackListDao,CRM.cltStkshareDao,CRM.cltStockDao,CRM.cltFileDao,CRM.cltCltInfoDao,CRM.cltCltAccountsDao,CRM.cltCltAccountsTblDao,CRM.reginoDao,CRM.userGroupDao,CRM.userGroupInfoDao,CRM.imageDataQuoteSetDao,CRM.cltInfoAttrDao,CRM.cltSubTypeDao,CRM.cltTypeDao,CRM.cltTypeFieldDao,CRM.cltConfInfoQuoteDao,CRM.cltBaseInfoManageDao,CRM.cltBaseInfoApproveDao,CRM.cltMemberTypeDao,CRM.cltCorresspondentDao,CRM.cltManageInfoDao,CRM.baseTxProxy,CRM.SmsMainService,CRM.webHandlerFactoryBySpringCreator,CRM.abstractWebHandler,CRM.webHanderBpRegion,CRM.getKeyInfoWebHandler,CRM.commonExtWebAction,CRM.webHandler0101XZQH,CRM.testHandler,CRM.downloadHandler,CRM.webHandler0101,CRM.webHandler0101Save,CRM.webHandler0101Remove,CRM.webHandler0105Upload,CRM.webHandler0108,CRM.webHandler0108Save,CRM.webHandler0108Remove,CRM.webHandler0201,CRM.webHandler0201_1,CRM.webHandler0201Save,CRM.webHandler0201Save_1,CRM.webHandler0201Remove,CRM.webHandler0201Remove_1,CRM.webHandler020101,CRM.webHandler020101_1,CRM.webHandler020102,CRM.webHandler020102_1,CRM.webHandler020102Save,CRM.webHandler020102Save_1,CRM.webHandler020102Remove,CRM.webHandler020102Remove_1,CRM.webHandler0202,CRM.webHandler0202Save,CRM.webHandler0202Remove,CRM.webHandler0203,CRM.webHandler0203Save,CRM.webHandler0203Remove,CRM.webHandler020301,CRM.webHandler020301Save,CRM.webHandler020301Remove,CRM.webHandler020302,CRM.webHandler020302Save,CRM.webHandler020302Remove,CRM.webHandler0204,CRM.webHandler0204Upload,CRM.webHandler020401,CRM.webHandler020401Remove,CRM.webHandler020402,CRM.webHandler0205,CRM.webHandler0205Save,CRM.webHandler0205Remove,CRM.webHandler0206,CRM.webHandler0206Save,CRM.webHandler0206Remove,CRM.webHandler0207,CRM.webHandler0207Upload,CRM.webHandler020701,CRM.webHandler020703,CRM.webHandler020704,CRM.webHandler020701Remove,CRM.webHandler020702,CRM.webHandler0301,CRM.webHandler0301_1,CRM.webHandler030101,CRM.webHandler030102,CRM.webHandler030103,CRM.webHandler030104,CRM.webHandler03010401,CRM.webHandler03010402,CRM.webHandler03010403,CRM.webHandler03010404,CRM.webHandler030105,CRM.webHandler030106,CRM.webHandler030107,CRM.webHandler0303,CRM.webHandler0303_1,CRM.webHandler030301,CRM.webHandler0603,CRM.webHandler0604,CRM.webHandler0605,CRM.webHandler0606,CRM.webHandler9903,CRM.webHandler9903_1,CRM.webHandler9904,CRM.webHandler9905,CRM.webHandler0401,CRM.webHandler0401_1,CRM.webHandler040101,CRM.webHandler04010101,CRM.webHandler04010102,CRM.webHandler04010103,CRM.webHandler04010104,CRM.webHandler04010105,CRM.webHandler04010106,GTSB.propertyConfigurer,GTSB.smpSqlMapClient,GTSB.GTSBSpringBeanFactory,GTSB.gtsbEventServer,FTS.propertyConfigurer,FTS.smpSqlMapClient,FTS.FTSpringBeanFactory,FTS.ftsEventServer,GTSC-Web.propertyConfigurer,GTSC-Web.smpSqlMapClient,GTSC-Web.gtscEventServer,waf.propertyConfigurer,waf.dataSource,waf.sessionFactory,waf.hibernateTransactionManager,waf.dataSourceTransactionManager,waf.sqlMapClient]; root of BeanFactory hierarchy]
+11:41:13 INFO  [Environment] Hibernate 3.1.3
+11:41:13 INFO  [Environment] hibernate.properties not found
+11:41:13 INFO  [Environment] using CGLIB reflection optimizer
+11:41:13 INFO  [Environment] using JDK 1.4 java.sql.Timestamp handling
+11:41:13 INFO  [Environment] Hibernate 3.1.3
+11:41:13 INFO  [Environment] hibernate.properties not found
+11:41:13 INFO  [Environment] using CGLIB reflection optimizer
+11:41:13 INFO  [Environment] using JDK 1.4 java.sql.Timestamp handling
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.DbBizCase -> BizCase
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizHistory -> BizHistory
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.DbBizCase -> BizCase
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizRight -> BizRight
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizCaseDispatchHistoryView -> VW_DispatchHistory
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.NsClient -> NsClient
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.WfUser -> BizWfUser
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizAgency -> BIZ_AGENCY
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcessing -> BIZPROCESSING
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcRight -> BizProcRight
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizHistory -> BizHistory
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizActionType -> BIZ_ACTION_TYPE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlow -> BIZ_FLOW
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTask -> BIZ_TASKS
+11:41:13 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizAllocs -> BIZ_ALLOCS
+11:41:13 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizActions -> BIZ_TASK_ACTION
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAllocation -> BIZ_ALLOCATIONS
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizResourceRule -> BIZ_RESOURCE_RULES
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizCondition -> BIZ_CONDITION
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizRuleType -> BIZ_RULE_TYPE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAction -> BIZ_ACTION
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskType -> BIZ_TASK_TYPE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlowType -> BIZ_FLOW_TYPE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizReject -> BIZ_REJECTS
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskAction -> BIZ_TASK_ACTION
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskBusinessType -> BIZ_TASK_BUSINESS_TYPE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizRight -> BizRight
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizCaseDispatchHistoryView -> VW_DispatchHistory
+11:41:13 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizFlow.bizTasks -> BIZ_TASKS
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.NsClient -> NsClient
+11:41:13 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizConditions -> BIZ_CONDITION
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.WfUser -> BizWfUser
+11:41:13 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizRejects -> BIZ_REJECTS
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizAgency -> BIZ_AGENCY
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcessing -> BIZPROCESSING
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.persistent.BizProcRight -> BizProcRight
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizActionType -> BIZ_ACTION_TYPE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlow -> BIZ_FLOW
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTask -> BIZ_TASKS
+11:41:13 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizAllocs -> BIZ_ALLOCS
+11:41:13 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizActions -> BIZ_TASK_ACTION
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAllocation -> BIZ_ALLOCATIONS
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizResourceRule -> BIZ_RESOURCE_RULES
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizCondition -> BIZ_CONDITION
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizRuleType -> BIZ_RULE_TYPE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizAction -> BIZ_ACTION
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskType -> BIZ_TASK_TYPE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizFlowType -> BIZ_FLOW_TYPE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizReject -> BIZ_REJECTS
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskAction -> BIZ_TASK_ACTION
+11:41:13 WARN  [RootClass] composite-id class does not override equals(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.bizflow.xmlparser.persistent.BizTaskBusinessType -> BIZ_TASK_BUSINESS_TYPE
+11:41:13 WARN  [RootClass] composite-id class does not override hashCode(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltBlackList -> CLT_BLACK_LIST
+11:41:13 INFO  [ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltInfo -> CLT_CLT_INFO
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltConfInfo -> CLT_CONF_INFO
+11:41:13 INFO  [SettingsFactory] RDBMS: Oracle, version: Oracle Database 12c Enterprise Edition Release 12.1.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltContact -> CLT_CONTACT
+11:41:13 INFO  [SettingsFactory] JDBC driver: Oracle JDBC driver, version: 12.1.0.1.0
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltContribute -> CLT_CONTRIBUTE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCorresspondent -> CLT_CORRESSPONDENT
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltFile -> CLT_FILE
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltFileLog -> CLT_FILE_LOG
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltParner -> CLT_PARNER
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltSpEvent -> CLT_SP_EVENT
+11:41:13 INFO  [Dialect] Using dialect: org.hibernate.dialect.OracleDialect
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltSpModify -> CLT_SP_MODIFY
+11:41:13 INFO  [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+11:41:13 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltStkshare -> CLT_STKSHARE
+11:41:14 INFO  [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:41:14 INFO  [SettingsFactory] Automatic flush during beforeCompletion(): enabled
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltStock -> CLT_STOCK
+11:41:14 INFO  [SettingsFactory] Automatic session close at end of transaction: disabled
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltInfoTbl -> CLT_CLT_INFO_TBL
+11:41:14 INFO  [SettingsFactory] JDBC batch size: 15
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.Wfuser -> WFUSER
+11:41:14 INFO  [SettingsFactory] JDBC batch updates for versioned data: disabled
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.Region -> CLT_REGION
+11:41:14 INFO  [SettingsFactory] Scrollable result sets: enabled
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltAccounts -> CLT_CLT_ACCOUNTS
+11:41:14 INFO  [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+11:41:14 INFO  [SettingsFactory] Connection release mode: on_close
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltCltAccountsTbl -> CLT_CLT_ACCOUNTSTBL
+11:41:14 INFO  [SettingsFactory] Maximum outer join fetch depth: 3
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltConfInfoValue -> CLT_CONF_INFO_VALUE
+11:41:14 INFO  [SettingsFactory] Default batch fetch size: 8
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.BpBank -> BP_BANK
+11:41:14 INFO  [SettingsFactory] Generate SQL with comments: disabled
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.ElRegion -> EL_REGION
+11:41:14 INFO  [SettingsFactory] Order SQL updates by primary key: enabled
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.Cnaps -> CNAPS
+11:41:14 INFO  [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:41:14 INFO  [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CnapsBank -> CNAPS_BANK
+11:41:14 INFO  [SettingsFactory] Query language substitutions: {}
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltUserGroupInfo -> CLT_USER_GROUP_INFO
+11:41:14 INFO  [SettingsFactory] Second-level cache: enabled
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltImageDataQuote -> CLT_IMAGE_DATA_QUOTE
+11:41:14 INFO  [SettingsFactory] Query cache: enabled
+11:41:14 INFO  [HbmBinder] Mapping class: com.nstc.crm.domain.CltConfInfoValueTbl -> CLT_CONF_INFO_VALUE_TBL
+11:41:14 INFO  [SettingsFactory] Cache provider: org.hibernate.cache.EhCacheProvider
+11:41:14 INFO  [SettingsFactory] Optimize cache for minimal puts: disabled
+11:41:14 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizFlow.bizTasks -> BIZ_TASKS
+11:41:14 INFO  [SettingsFactory] Structured second-level cache entries: disabled
+11:41:14 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizConditions -> BIZ_CONDITION
+11:41:14 INFO  [SettingsFactory] Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+11:41:14 INFO  [HbmBinder] Mapping collection: com.nstc.bizflow.xmlparser.persistent.BizTask.bizRejects -> BIZ_REJECTS
+11:41:14 INFO  [SettingsFactory] Statistics: disabled
+11:41:14 INFO  [HbmBinder] Mapping collection: com.nstc.crm.domain.CltConfInfo.cltCltInfosForCreditlevel -> CLT_CLT_INFO
+11:41:14 INFO  [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+11:41:14 INFO  [HbmBinder] Mapping collection: com.nstc.crm.domain.CltConfInfo.cltCltInfosForCreditrating -> CLT_CLT_INFO
+11:41:14 INFO  [SettingsFactory] Default entity-mode: pojo
+11:41:14 INFO  [HbmBinder] Mapping collection: com.nstc.crm.domain.CltConfInfo.cltCltInfosForIndustry -> CLT_CLT_INFO
+11:41:14 WARN  [RootClass] composite-id class does not override equals(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+11:41:14 WARN  [RootClass] composite-id class does not override hashCode(): com.nstc.bizflow.xmlparser.persistent.PKBizTaskAction
+11:41:14 INFO  [ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+11:41:14 INFO  [SettingsFactory] RDBMS: Oracle, version: Oracle Database 12c Enterprise Edition Release 12.1.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+11:41:14 INFO  [SettingsFactory] JDBC driver: Oracle JDBC driver, version: 12.1.0.1.0
+11:41:14 INFO  [SessionFactoryImpl] building session factory
+11:41:14 WARN  [ConfigurationFactory] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/n9_servers/fss_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+11:41:14 INFO  [Dialect] Using dialect: org.hibernate.dialect.OracleDialect
+11:41:14 INFO  [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+11:41:14 INFO  [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+11:41:14 INFO  [SettingsFactory] Automatic flush during beforeCompletion(): enabled
+11:41:14 INFO  [SettingsFactory] Automatic session close at end of transaction: disabled
+11:41:14 INFO  [SettingsFactory] JDBC batch size: 15
+11:41:14 INFO  [SettingsFactory] JDBC batch updates for versioned data: disabled
+11:41:14 INFO  [SettingsFactory] Scrollable result sets: enabled
+11:41:14 INFO  [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+11:41:14 INFO  [SettingsFactory] Connection release mode: on_close
+11:41:14 INFO  [SettingsFactory] Maximum outer join fetch depth: 3
+11:41:14 INFO  [SettingsFactory] Default batch fetch size: 8
+11:41:14 INFO  [SettingsFactory] Generate SQL with comments: disabled
+11:41:14 INFO  [SettingsFactory] Order SQL updates by primary key: enabled
+11:41:14 INFO  [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+11:41:14 INFO  [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+11:41:14 INFO  [SettingsFactory] Query language substitutions: {}
+11:41:14 INFO  [SettingsFactory] Second-level cache: enabled
+11:41:14 INFO  [SettingsFactory] Query cache: enabled
+11:41:14 INFO  [SettingsFactory] Cache provider: org.hibernate.cache.EhCacheProvider
+11:41:14 INFO  [SettingsFactory] Optimize cache for minimal puts: disabled
+11:41:14 INFO  [SettingsFactory] Structured second-level cache entries: disabled
+11:41:14 INFO  [SettingsFactory] Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+11:41:14 INFO  [SettingsFactory] Statistics: disabled
+11:41:14 INFO  [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+11:41:14 INFO  [SettingsFactory] Default entity-mode: pojo
+11:41:14 INFO  [SessionFactoryImpl] building session factory
+11:41:14 WARN  [ConfigurationFactory] No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/n9_servers/sms_web/apache-tomcat-6.0.32/webapps/SmartPage/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+11:41:14 INFO  [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+11:41:14 INFO  [UpdateTimestampsCache] starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+11:41:14 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+11:41:14 INFO  [StandardQueryCache] starting query cache at region: org.hibernate.cache.StandardQueryCache
+11:41:14 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+11:41:14 INFO  [HibernateTransactionManager] Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@e62093] of Hibernate SessionFactory for HibernateTransactionManager
+11:41:14 INFO  [CacheManager] Creating new CacheManager singleton
+11:41:14 WARN  [CacheManager] Could not load /whirlycache.xml file. Falling back to defaults.
+11:41:14 INFO  [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+11:41:14 INFO  [UpdateTimestampsCache] starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+11:41:14 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+11:41:14 INFO  [StandardQueryCache] starting query cache at region: org.hibernate.cache.StandardQueryCache
+11:41:14 WARN  [EhCacheProvider] Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+11:41:15 INFO  [ContextLoader] Using context class [org.springframework.web.context.support.XmlWebApplicationContext] for root WebApplicationContext
+11:41:15 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 4483 ms
+11:41:15 INFO  [HibernateTransactionManager] Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@17fd168] of Hibernate SessionFactory for HibernateTransactionManager
+11:41:15 INFO  [SimpleThreadPool] Job execution threads will use class loader of thread: main
+11:41:15 INFO  [QuartzScheduler] Quartz Scheduler v.1.5.1 created.
+11:41:15 INFO  [RAMJobStore] RAMJobStore initialized.
+11:41:15 INFO  [StdSchedulerFactory] Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+11:41:15 INFO  [StdSchedulerFactory] Quartz scheduler version: 1.5.1
+11:41:15 INFO  [SchedulerFactoryBean] Starting Quartz scheduler now
+11:41:15 INFO  [QuartzScheduler] Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+11:41:15 INFO  [CacheManager] Creating new CacheManager singleton
+11:41:15 WARN  [CacheManager] Could not load /whirlycache.xml file. Falling back to defaults.
+11:41:15 INFO  [ContextLoader] Using context class [org.springframework.web.context.support.XmlWebApplicationContext] for root WebApplicationContext
+11:41:15 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 4625 ms
+11:41:44 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
+11:41:45 INFO  [CacheDecorator] Size: 0; Questions: 0; Hits: 0; Adaptive r/w ratio: 0%; Total hitrate: ?
