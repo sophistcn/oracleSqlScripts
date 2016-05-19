@@ -1,0 +1,7 @@
+s = select * from ;
+sf = select a.* from     a ;
+d = delete from     where      ;
+u = update   a set a.   where a.   ;
+w = where   ;
+dbs=dbms_output.put_line('');
+dr = drodddddddddddddddddddddddddd;

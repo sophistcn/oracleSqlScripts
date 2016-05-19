@@ -1,0 +1,12 @@
+select * from gtse_tx t;
+
+select u.uno as "value", u.uname as "name" from wf_master_user u ;
+
+
+
+select * from gtsa_account ;
+
+update gtsa_account t set t.inner_account_no = '2012010103002' where t.account_no like '%wzp70332%';
+
+
+update gtsa_account t set t.inner_account_no = '2012010103001' where t.account_no like '%wzp76641%';

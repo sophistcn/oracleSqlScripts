@@ -54,7 +54,6 @@ grant dba to sms2;
 grant connect, resource to sms2;
 
 
-
 create user bp3 identified by bp3;
 grant dba to bp3;
 grant connect, resource to bp3;
@@ -66,12 +65,17 @@ grant dba to my_lucene;
 grant connect, resource to my_lucene;
 
 
-create user fss01 identified by fss01;
-grant dba to fss01;
-grant connect, resource to fss01;
+create user fss02 identified by fss02;
+grant dba to fss02;
+grant connect, resource to fss02;
 
-create user sms01 identified by sms01;
-grant dba to sms01;
-grant connect, resource to sms01;
+create user sms02 identified by sms02;
+grant dba to sms02;
+grant connect, resource to sms02;
+
+
+create user g6test identified by g6test;
+grant dba to g6test;
+grant connect, resource to g6test;
 
 imp fss2/fss2@xe fromuser="fss" touser="fss2" file="G:\db_backup\n9.fss.base.test.dmp" ignore=y feedback=5000
